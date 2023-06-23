@@ -18,8 +18,6 @@
 
     &__content {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
     }
 
     &__left {
@@ -40,7 +38,9 @@
     }
 
     &__imageList {
-        width: 100%;
+        max-width: 831px;
+        overflow: hidden;
+        display: flex;
     }
 
     &__btns {
@@ -157,31 +157,42 @@
     }
 }
 
-.mySwiper2 {
-    height: 100%;
+.swiper-slide img {
+    display: block;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.swiper-slide {
+    background-size: contain;
+    background-position: center;
+}
+
+.mySwiper2 {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .mySwiper {
-    max-width: 100% !important;
-    height: 100% !important;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .mySwiper .swiper-slide {
-    width: 120px !important;
-    height: 80px !important;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.mySwiper .swiper-slide img {
-    border-radius: 7px;
+    width: 120p;
+    height: auto;
+    border-radius: 10px !important;
 }
 
 .mySwiper .swiper-slide-thumb-active {
-    border-radius: 10px !important;
     border: 3px solid #23272b;
+    overflow: hidden;
+}
+
+.mySwiper2 .swiper-slide {
+    width: 831px;
+    height: auto;
 }
 
 .swiper-slide img {
@@ -189,9 +200,86 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 6px !important;
 }
 
-// .mySwiper .swiper-wrapper {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
+@media (max-width: 1350px) {
+    .projectsDetailMain {
+        &__image {
+            max-width: 750px;
+        }
+        &__imageList {
+            max-width: 750px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .projectsDetailMain {
+        &__image {
+            max-width: 700px;
+        }
+        &__imageList {
+            max-width: 700px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .projectsDetailMain {
+        &__content {
+            display: block;
+        }
+
+        &__image {
+            max-width: 100%;
+        }
+        &__imageList {
+            max-width: 100%;
+        }
+
+        &__left {
+            margin-right: 0;
+        }
+
+        &__right {
+            margin-top: 50px;
+        }
+
+        &__title br {
+            display: none;
+        }
+
+        &__desc {
+            max-width: 70%;
+        }
+
+        &__info {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .projectsDetailMain {
+        &__title {
+            font-size: $fontTitle768;
+        }
+
+        &__desc {
+            max-width: 90%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .projectsDetailMain {
+        &__calculator-wrapper {
+            text-align: center;
+        }
+
+        &__calculator {
+            padding: 17px 60px;
+        }
+    }
+}
