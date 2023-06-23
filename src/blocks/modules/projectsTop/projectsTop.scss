@@ -1,0 +1,429 @@
+.projectsTop {
+    padding-top: 129px;
+    padding-bottom: 46px;
+    margin-bottom: 27px;
+    border-bottom: 1px solid #e9e9e9;
+
+    &__route {
+        font-size: 14px;
+        line-height: 17px;
+        color: #23272b;
+        margin-bottom: 15px;
+    }
+
+    &__route a {
+        text-decoration: none;
+        color: #23272b;
+    }
+
+    &__name {
+        font-family: "Lack", sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 72px;
+        text-transform: uppercase;
+        color: #23272b;
+        margin-bottom: 41px;
+    }
+
+    &__settings {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        gap: 78px;
+    }
+
+    &__price {
+        width: 260px;
+    }
+
+    &__square {
+        width: 260px;
+    }
+
+    &__price p,
+    &__floor p,
+    &__bedroom p,
+    &__bathroom p,
+    &__square p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: #23272b;
+        margin-bottom: 19px;
+    }
+
+    &__chechboxes > div {
+        margin-bottom: 6px;
+    }
+
+    &__chechboxes > div:last-child {
+        margin-bottom: 0;
+    }
+
+    &__reset {
+        display: flex;
+        align-items: end;
+    }
+
+    &__reset p {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #a78b73;
+    }
+
+    &__reset p:hover {
+        cursor: pointer;
+        color: gray;
+    }
+
+    &__range-slider {
+        position: relative;
+    }
+}
+
+@media (max-width: 1200px) {
+    .projectsTop {
+        &__settings {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__left {
+            justify-content: flex-start;
+        }
+
+        &__right {
+            justify-content: flex-start;
+        }
+
+        &__name {
+            font-size: $fontTitle1200;
+            line-height: 130%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .projectsTop {
+        &__name {
+            font-size: $fontTitle992;
+            line-height: 130%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .projectsTop {
+        &__name {
+            font-size: $fontTitle768;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .projectsTop {
+        &__left {
+            justify-content: flex-start;
+            gap: 40px;
+        }
+
+        &__right {
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .projectsTop {
+        padding-top: 110px;
+        &__left {
+            flex-direction: column;
+        }
+
+        &__right {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        &__price {
+            width: 70%;
+        }
+
+        &__square {
+            width: 70%;
+        }
+
+        &__name {
+            font-size: $fontTitle600;
+        }
+    }
+    .field {
+        width: 128px;
+    }
+    .field2 {
+        width: 128px;
+    }
+}
+
+@media (max-width: 500px) {
+    .projectsTop {
+        &__price {
+            width: 100%;
+        }
+
+        &__square {
+            width: 100%;
+        }
+    }
+}
+
+// input checkbox
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 27px;
+    line-height: 22px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #000000;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #c5c5c5;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: #a78b73;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    content: url("/img/sprites/icon_okey.svg");
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 8px;
+}
+
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+//input range
+
+.price-input {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    margin-top: 30px;
+}
+.price-input .field {
+    display: flex;
+    padding: 8px 0 8px 11px;
+    height: 32px;
+    align-items: center;
+    border: 1.5px solid #c5c5c5;
+    border-radius: 5px;
+}
+.field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    margin-left: 5px;
+    border: 0;
+    -moz-appearance: textfield;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.field span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.slider {
+    height: 4px;
+    position: relative;
+    background: #cbcbcb;
+}
+.slider .progress {
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: #cfc0b4;
+}
+.range-input {
+    position: relative;
+}
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #a78b73;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #17a2b8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+//input range2
+
+.price-input2 {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    margin-top: 30px;
+}
+.price-input2 .field2 {
+    display: flex;
+    padding: 8px 0 8px 11px;
+    height: 32px;
+    align-items: center;
+    border: 1.5px solid #c5c5c5;
+    border-radius: 5px;
+}
+.field2 input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    margin-left: 5px;
+    border: 0;
+    -moz-appearance: textfield;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.field2 span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.slider2 {
+    height: 4px;
+    position: relative;
+    background: #cbcbcb;
+}
+.slider2 .progress2 {
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: #cfc0b4;
+}
+.range-input2 {
+    position: relative;
+}
+.range-input2 input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #a78b73;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #17a2b8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}

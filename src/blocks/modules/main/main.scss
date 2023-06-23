@@ -1,0 +1,186 @@
+.main {
+    padding-top: 147px;
+    padding-bottom: 59px;
+
+    &__text h1 {
+        font-family: "Lack", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 70px;
+        text-transform: uppercase;
+        color: #23272b;
+        margin-left: 319px;
+        margin-bottom: 2px;
+    }
+
+    &__stroke {
+        font-family: "Lack", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 70px;
+        text-transform: uppercase;
+        color: #23272b;
+        margin-bottom: 2px;
+    }
+
+    &__stoke_color {
+        color: #a78b73;
+    }
+
+    &__bottom {
+        padding-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__bottom a {
+        padding: 17px 45px 17px 45px;
+        background: #a78b73;
+        border-radius: 50px;
+        border: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #ffffff;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+    }
+
+    &__bottom a:hover {
+        cursor: pointer;
+        background: #000;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__info p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #23272b;
+    }
+}
+
+.mainPhoto {
+    background-image: url("../../../img/sprites/header_image.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 2.4/1;
+}
+
+@media (max-width: 1340px) {
+    .main {
+        &__text h1 {
+            margin-left: 0px;
+        }
+
+        &__stroke {
+            display: inline;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .main {
+        &__text h1 {
+            font-size: 52px;
+        }
+
+        &__stroke {
+            font-size: 52px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        &__text h1 {
+            font-size: 40px;
+            line-height: 130%;
+        }
+
+        &__stroke {
+            font-size: 40px;
+            line-height: 130%;
+        }
+
+        &__bottom a {
+            display: none;
+        }
+        &__bottom {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .mainPhoto {
+        background-size: cover;
+        background-position: center;
+        height: 429px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding-top: 122px;
+        padding-bottom: 30px;
+
+        &__text h1 {
+            font-size: 32px;
+            line-height: 130%;
+        }
+
+        &__stroke {
+            font-size: 32px;
+            line-height: 130%;
+        }
+
+        &__info p {
+            font-size: 18px;
+        }
+
+        &__info img {
+            width: 28px;
+            height: 28px;
+        }
+
+        &__bottom {
+            padding-top: 21px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding-top: 96px;
+        padding-bottom: 30px;
+
+        &__text h1 {
+            font-size: 24px;
+            line-height: 130%;
+        }
+
+        &__stroke {
+            font-size: 24px;
+            line-height: 130%;
+        }
+
+        &__info p {
+            font-size: 15px;
+            line-height: 130%;
+        }
+    }
+
+    .mainPhoto {
+        background-image: url("../../../img/sprites/main_image2.jpg");
+    }
+}

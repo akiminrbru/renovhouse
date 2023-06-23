@@ -1,0 +1,197 @@
+.projectsDetailMain {
+    &__inner {
+        padding-top: 129px;
+        padding-bottom: 70px;
+    }
+
+    &__route {
+        font-size: 14px;
+        line-height: 17px;
+        color: #23272b;
+        margin-bottom: 40px;
+    }
+
+    &__route a {
+        text-decoration: none;
+        color: #23272b;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &__left {
+        margin-right: 50px;
+    }
+
+    &__image {
+        max-width: 831px;
+        margin-bottom: 9px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__imageList {
+        width: 100%;
+    }
+
+    &__btns {
+        margin-left: 17px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__swiper-left {
+        cursor: pointer;
+        transition: all 0.3 ease-in;
+    }
+
+    &__swiper-left:hover {
+        svg path {
+            fill: gray;
+        }
+    }
+
+    &__swiper-right {
+        cursor: pointer;
+        transition: all 0.3 ease-in;
+    }
+
+    &__swiper-right:hover {
+        svg path {
+            fill: gray;
+        }
+    }
+
+    &__title {
+        font-family: "Lack", sans-serif;
+        color: #23272b;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        color: #23272b;
+        font-size: 14px;
+        line-height: 145%;
+        margin-bottom: 20px;
+        max-width: 360px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 50px;
+        margin-bottom: 76px;
+    }
+
+    &__info-left div {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    &__info-left div:first-child {
+        margin-bottom: 18px;
+    }
+
+    &__info-right div {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    &__info-right div:first-child {
+        margin-bottom: 18px;
+    }
+
+    &__price {
+        color: #23272b;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+
+    &__complect {
+        display: inline-block;
+        color: #a78b73;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        border-bottom: 1px solid #a78b73;
+        margin-bottom: 30px;
+        transition: color 0.6 ease-in-out;
+    }
+
+    &__complect:hover {
+        color: #000;
+    }
+
+    &__calculator {
+        display: inline-block;
+        padding: 17px 92px;
+        border-radius: 50px;
+        background: #a78b73;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        white-space: nowrap;
+    }
+
+    &__calculator:hover {
+        cursor: pointer;
+        background: #000;
+    }
+}
+
+.mySwiper2 {
+    height: 100%;
+    width: 100%;
+}
+
+.mySwiper {
+    max-width: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+}
+
+.mySwiper .swiper-slide {
+    width: 120px !important;
+    height: 80px !important;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mySwiper .swiper-slide img {
+    border-radius: 7px;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    border-radius: 10px !important;
+    border: 3px solid #23272b;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// .mySwiper .swiper-wrapper {
+//     display: flex;
+//     flex-wrap: wrap;
+// }

@@ -1,0 +1,117 @@
+.projectsDetailDesc {
+    padding-bottom: 70px;
+
+    &__inner h2 {
+        font-family: "Lack", sans-serif;
+        color: #23272b;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__btns {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    &__charact {
+        display: none;
+    }
+
+    &__article1 {
+        color: #23272b;
+        margin-bottom: 25px;
+    }
+
+    &__article2 {
+        color: #23272b;
+        margin-bottom: 25px;
+    }
+
+    &__article3 {
+        color: #23272b;
+        margin-bottom: 25px;
+        margin-left: 25px;
+    }
+
+    &__article4 {
+        color: #23272b;
+        margin-bottom: 25px;
+    }
+
+    &__write-next {
+        display: inline-block;
+        color: #a78b73;
+        font-size: 16px;
+        font-weight: 500;
+        border-bottom: 1px solid #a78b73;
+    }
+
+    &__write-next:hover {
+        cursor: pointer;
+    }
+}
+
+// табы
+
+.projectsDetailDesc__btn1 {
+    display: block;
+}
+.projectsDetailDesc__btn1 input[type="radio"] {
+    display: none;
+}
+.projectsDetailDesc__btn1 label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    user-select: none;
+    padding: 0 6px 9px 6px;
+    border-bottom: 3px solid #dbdbdb;
+}
+
+.projectsDetailDesc__btn1 input[type="radio"]:checked + label {
+    background: transparent;
+    color: #a78b73;
+    border-bottom: 3px solid #a78b73;
+}
+
+.projectsDetailDesc__btn1 input[type="radio"]:hover {
+    background: #666;
+}
+
+.projectsDetailDesc__btn2 {
+    display: block;
+}
+.projectsDetailDesc__btn2 input[type="radio"] {
+    display: none;
+}
+.projectsDetailDesc__btn2 label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    user-select: none;
+    padding: 0 36px 9px 36px;
+    border-bottom: 3px solid #dbdbdb;
+}
+
+.projectsDetailDesc__btn2 input[type="radio"]:checked + label {
+    background: transparent;
+    color: #a78b73;
+    border-bottom: 3px solid #a78b73;
+}
+
+.projectsDetailDesc__btn2 input[type="radio"]:hover {
+    background: #666;
+}
+
+@media (max-width: 768px) {
+    .projectsDetailDesc {
+        &__inner h2 {
+            font-size: $fontTitle768;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.projectsDetailComplect {
+    margin-bottom: 131px;
+
+    &__inner h2 {
+        font-family: "Lack", sans-serif;
+        color: #23272b;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 26px;
+    }
+
+    &__inner table {
+        width: 100%;
+        border-spacing: 0;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &__inner table td {
+        border: 1px solid #e0e0e0;
+        margin: 0;
+    }
+
+    &__table-title {
+        border-radius: 5px 5px 0 0;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 20px;
+        background-color: #a78b73;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        border: 0px !important;
+    }
+
+    &__table-square {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        text-align: center;
+    }
+
+    &__table-chapter {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 219px;
+        color: #23272b;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &__table-desc {
+        text-align: center;
+        color: #23272b;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &__table-desc-inner {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 14px;
+        padding-right: 40px;
+        max-width: 616px;
+        color: #23272b;
+        font-size: 15px;
+        font-family: Inter;
+    }
+
+    &__table-complect {
+        color: #23272b;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        max-width: 444px;
+    }
+
+    &__table-base,
+    &__table-standart,
+    &__table-asphoto {
+        color: #23272b;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    &__inner table img {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .projectsDetailComplect {
+        &__inner table img {
+            margin-left: 55px;
+            margin-right: 55px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .projectsDetailComplect {
+        &__inner table img {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .projectsDetailComplect {
+        &__tableComplect {
+            overflow-y: scroll;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .projectsDetailComplect {
+        &__inner h2 {
+            font-size: $fontTitle768;
+        }
+    }
+}
