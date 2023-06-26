@@ -88,3 +88,25 @@ for (let i = 0; i < input_3.length; i++) {
         }
     })
 };
+
+// Читать далее
+
+const writenext = document.querySelector('.projectsDetailDesc__write-next');
+const writeback = document.querySelector('.projectsDetailDesc__write-back');
+const textDesc = document.querySelector('.projectsDetailDesc__hidden');
+
+if (writenext) {
+    writenext.addEventListener('click', () => {
+        writenext.classList.toggle('projectsDetailDesc__hide');
+        textDesc.classList.toggle('projectsDetailDesc__hide');
+        writeback.classList.toggle('projectsDetailDesc__hide');
+    });
+}
+
+if (writeback) {
+    writeback.addEventListener('click', () => {
+        writenext.classList.toggle('projectsDetailDesc__hide');
+        textDesc.classList.toggle('projectsDetailDesc__hide');
+        writeback.classList.toggle('projectsDetailDesc__hide');
+    });
+}

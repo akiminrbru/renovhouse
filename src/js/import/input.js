@@ -126,19 +126,29 @@ rangeInput2.forEach(input =>{
 let checkList = document.getElementsByClassName('projectsTop__checkbox');
 let resetBtn = document.querySelector('.projectsTop__reset-btn');
 
-resetBtn.addEventListener('click', () => {
-    rangeInput[0].value = 5000000;
-    priceInput[0].value = 5000000;
-    rangeInput[1].value = 100000000;
-    priceInput[1].value = 100000000;
 
-    rangeInput2[0].value = 110;
-    priceInput2[0].value = 110;
-    rangeInput2[1].value = 800;
-    priceInput2[1].value = 800;
+if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+        rangeInput[0].value = 5000000;
+        priceInput[0].value = 5000000;
+        rangeInput[1].value = 100000000;
+        priceInput[1].value = 100000000;
+    
+        rangeInput2[0].value = 110;
+        priceInput2[0].value = 110;
+        rangeInput2[1].value = 800;
+        priceInput2[1].value = 800;
+    
+        for (let i = 0; i < checkList.length; i++) {
+            if (i === 0) {
+                checkList[i].checked = true; 
+            } else {
+                checkList[i].checked = false 
+            }
+              
+        }
+    })
+    
+}
 
-    for (let i = 0; i < checkList.length; i++) {
-        checkList[i].checked = false   
-    }
-})
 

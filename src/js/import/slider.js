@@ -18,14 +18,21 @@ const swiper = new Swiper('.swiper', {
 const swiper1 = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
-  
+    loop: true,  
     // If we need pagination
     pagination: {
       el: '.swiper-pagination1',
+      clickable: true,
     },
 });
 
+const bullet = document.querySelectorAll('.swiper-pagination-bullet');
+
+for (let i = 0; i < bullet.length; i++) {
+  bullet[i].addEventListener('mouseover', () => {
+    bullet[i].click();
+  });
+}
 
 // detail
 
@@ -66,9 +73,12 @@ let swiper2 = new Swiper(".mySwiper2", {
 const swiperPrev = document.getElementById("swiperPrev");
 const swiperNext = document.getElementById("swiperNext");
 
-swiperPrev.addEventListener("click", () => {
+if (swiperPrev && swiperNext ) {
+  swiperPrev.addEventListener("click", () => {
     swiper2.slidePrev();
-});
-swiperNext.addEventListener("click", () => {
+  });
+  swiperNext.addEventListener("click", () => {
     swiper2.slideNext();
-});
+  });
+}
+
