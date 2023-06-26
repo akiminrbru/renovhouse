@@ -6,3 +6,5 @@ import "./import/list"
 import "./import/input"
 import "./import/slider"
 import "./import/showMore"
+import "./import/swiper"
+
