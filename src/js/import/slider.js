@@ -3,12 +3,10 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
   
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
   
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -31,6 +29,10 @@ const bullet = document.querySelectorAll('.swiper-pagination-bullet');
 for (let i = 0; i < bullet.length; i++) {
   bullet[i].addEventListener('mouseover', () => {
     bullet[i].click();
+  });
+
+  bullet[i].addEventListener('mousedown', () => {
+    bullet[i].parentNode.parentNode.parentNode.parentNode.click()
   });
 }
 
