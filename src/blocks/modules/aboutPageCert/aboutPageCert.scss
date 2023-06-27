@@ -1,0 +1,37 @@
+.aboutPageCert {
+    padding-bottom: 120px;
+
+    &__title {
+        color: #23272b;
+        font-size: 60px;
+        font-family: "Lack", sans-serif;
+        text-transform: uppercase;
+        max-width: 860px;
+        margin-bottom: 42px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.swiper5 {
+    overflow: hidden;
+    max-width: 1177px;
+    padding-bottom: 62px;
+}
+
+.swiper5 .swiper-pagination5 {
+    z-index: 2;
+    text-align: center;
+    margin-top: 42px;
+}
+
+.swiper5 .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    border-radius: 50% !important;
+    background-color: black !important;
+    z-index: 2;
+}

@@ -138,3 +138,35 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .projectsDetailDesc {
+        padding-bottom: 35px;
+        &__inner h2 {
+            font-size: 24px;
+            line-height: 130%;
+            margin-bottom: 20px;
+        }
+
+        &__btns {
+            margin-bottom: 15px;
+        }
+    }
+
+    .projectsDetailDesc__btn1 label {
+        font-size: 14px;
+    }
+
+    .projectsDetailDesc__btn2 label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .projectsDetailDesc__btn2 {
+        width: 100%;
+    }
+    .projectsDetailDesc__btn2 label {
+        width: 100%;
+    }
+}

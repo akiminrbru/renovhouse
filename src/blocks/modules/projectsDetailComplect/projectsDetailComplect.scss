@@ -126,3 +126,13 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .projectsDetailComplect {
+        &__inner h2 {
+            font-size: $fontTitle600;
+            line-height: 130%;
+            margin-bottom: 17px;
+        }
+    }
+}

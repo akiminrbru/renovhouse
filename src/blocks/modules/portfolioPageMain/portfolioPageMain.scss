@@ -1,0 +1,98 @@
+.portfolioPageMain {
+    padding-top: 128px;
+    padding-bottom: 90px;
+
+    &__route {
+        color: #23272b;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    &__route a {
+        text-decoration: none;
+        color: #23272b;
+    }
+
+    &__title {
+        color: #23272b;
+        font-size: 60px;
+        font-family: "Lack", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__card {
+        display: flex;
+        width: 100%;
+    }
+
+    &__left {
+        width: 68.54%;
+        margin-right: 50px;
+    }
+
+    &__name {
+        color: #23272b;
+        font-size: 30px;
+        font-family: "Lack", sans-serif;
+        text-transform: uppercase;
+        max-width: 341px;
+        margin-bottom: 20px;
+    }
+
+    &__prop {
+        display: flex;
+        justify-content: space-between;
+        max-width: 266px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #cecece;
+    }
+
+    &__prop-left {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    &__prop-right {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    &__prop-item {
+        color: #23272b;
+        font-size: 15px;
+        font-weight: 600;
+        display: flex;
+        gap: 7px;
+    }
+
+    &__info {
+        display: flex;
+        margin-top: 35px;
+        gap: 50px;
+    }
+
+    &__info-number {
+        color: #23272b;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &__info-text {
+        color: #7e7e7e;
+        font-size: 14px;
+    }
+}
+
+.swiper6 {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.swiper6 .swiper-slider {
+    width: 100%;
+    height: auto;
+}

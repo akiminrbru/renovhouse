@@ -1,0 +1,61 @@
+.aboutPageImage {
+    padding-top: 125px;
+    padding-bottom: 120px;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 45px;
+    }
+
+    &__title {
+        color: #23272b;
+        font-size: 60px;
+        font-family: "Lack", sans-serif;
+        text-transform: uppercase;
+        max-width: 790px;
+    }
+
+    &__text {
+        color: #23272b;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 600;
+        line-height: 145%;
+    }
+
+    &__square {
+        color: #23272b;
+        font-size: 60px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__slider {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 20px;
+    }
+}
+
+.swiper4 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.swiper4.swiper-slide img {
+    display: block;
+}
+
+.swiper-prev4 {
+    margin-left: -68px;
+    cursor: pointer;
+}
+
+.swiper-next4 {
+    margin-right: -68px;
+    cursor: pointer;
+}

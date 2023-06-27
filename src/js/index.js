@@ -7,4 +7,6 @@ import "./import/input"
 import "./import/slider"
 import "./import/showMore"
 import "./import/swiper"
+import "./import/showSettings"
+import "./import/showImage"
 

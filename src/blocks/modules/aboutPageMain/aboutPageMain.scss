@@ -1,0 +1,40 @@
+.aboutPageMain {
+    padding-top: 128px;
+    padding-bottom: 56px;
+
+    &__route {
+        color: #23272b;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    &__route a {
+        color: #23272b;
+        text-decoration: none;
+    }
+
+    &__title {
+        color: #23272b;
+        font-size: 60px;
+        font-family: "Lack", sans-serif;
+        text-transform: uppercase;
+    }
+
+    &__background {
+        background-image: url("/img/sprites/about_background.jpg");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 275px;
+        padding-top: 275px;
+    }
+
+    &__text {
+        max-width: 750px;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 135%;
+    }
+}

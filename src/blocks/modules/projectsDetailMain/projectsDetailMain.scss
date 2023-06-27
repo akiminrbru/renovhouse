@@ -73,6 +73,15 @@
         }
     }
 
+    &__title-mobile {
+        font-family: "Lack", sans-serif;
+        color: #23272b;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        display: none;
+    }
+
     &__title {
         font-family: "Lack", sans-serif;
         color: #23272b;
@@ -157,7 +166,14 @@
     }
 }
 
-.swiper-slide img {
+.mySwiper2.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mySwiper.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -172,6 +188,7 @@
 .mySwiper2 {
     width: 100% !important;
     height: 100% !important;
+    position: relative;
 }
 
 .mySwiper {
@@ -195,7 +212,15 @@
     height: auto;
 }
 
-.swiper-slide img {
+.mySwiper.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px !important;
+}
+
+.mySwiper2.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -210,6 +235,18 @@
         }
         &__imageList {
             max-width: 750px;
+        }
+
+        &__right {
+            margin-top: 30px;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__title-mobile {
+            display: block;
         }
     }
 }
@@ -243,7 +280,7 @@
         }
 
         &__right {
-            margin-top: 50px;
+            margin-top: 30px;
         }
 
         &__title br {
@@ -260,6 +297,14 @@
     }
 }
 
+@media (max-width: 992px) {
+    .projectsDetailMain {
+        &__route {
+            margin-bottom: 30px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .projectsDetailMain {
         &__title {
@@ -269,17 +314,88 @@
         &__desc {
             max-width: 90%;
         }
+
+        &__route {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .swiper-pagination2 {
+        display: none;
     }
 }
 
 @media (max-width: 600px) {
     .projectsDetailMain {
+        &__inner {
+            padding-top: 100px;
+            padding-bottom: 39px;
+        }
+
+        &__title-mobile {
+            color: #23272b;
+            font-size: 24px;
+            font-family: "Lack", sans-serif;
+            line-height: 130%;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 20px;
+        }
+
         &__calculator-wrapper {
             text-align: center;
         }
 
         &__calculator {
-            padding: 17px 60px;
+            padding: 17px 56px;
+        }
+
+        &__right {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        &__route {
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        &__desc {
+            display: none;
+        }
+
+        &__info {
+            border-top: 1px solid #e9e9e9;
+            border-bottom: 1px solid #e9e9e9;
+            padding-bottom: 13px;
+            padding-top: 13px;
+            margin-bottom: 13px;
+            margin-top: 20px;
+        }
+
+        &__price {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        &__complect {
+            margin-bottom: 33px;
+        }
+
+        &__image {
+            aspect-ratio: 17/14;
+        }
+
+        &__imageList {
+            display: none;
         }
     }
+}
+
+.swiper-pagination2 {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
 }

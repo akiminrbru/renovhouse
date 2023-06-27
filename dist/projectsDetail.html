@@ -90,7 +90,7 @@
             sizes="1024x1024"
             href="img/favicons/apple-touch-icon-1024x1024.png"
         />
-        <link rel="stylesheet" href="styles/main.min.css" />
+        <link rel="stylesheet" href="styles/main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -106,8 +106,12 @@
                 <a class="header__projectsLink" href="projectsPage.html"
                     >Проекты</a
                 >
-                <a class="header__companyLink" href="#">О компании</a>
-                <a class="header__portfolioLink" href="#">Портфолио</a>
+                <a class="header__companyLink" href="aboutPage.html"
+                    >О компании</a
+                >
+                <a class="header__portfolioLink" href="portfolioPage.html"
+                    >Портфолио</a
+                >
             </div>
             <a href="index.html">
                 <img
@@ -118,7 +122,9 @@
             </a>
             <div class="header__right">
                 <a href="#" class="header__calculatorLink">Калькулятор</a>
-                <a href="#" class="header__contactsLink">Контакты</a>
+                <a href="contactsPage.html" class="header__contactsLink"
+                    >Контакты</a
+                >
                 <a href="#" class="header__numberLink">8 900 000 00 00</a>
             </div>
         </div>
@@ -149,12 +155,26 @@
     </div>
 </header>
 <div class="burger">
-    <div class="burger__links">
-        <div><a href="projectsPage.html">Проекты</a></div>
-        <div><a href="#">О компании</a></div>
-        <div><a href="#">Портфолио</a></div>
-        <div><a href="#">Калькулятор</a></div>
-        <div><a href="#">Контакты</a></div>
+    <div class="burger__content">
+        <div class="burger__links">
+            <div class="burger__link">
+                <a href="projectsPage.html">Проекты</a>
+            </div>
+            <div class="burger__link">
+                <a href="aboutPage.html">О компании</a>
+            </div>
+            <div class="burger__link">
+                <a href="portfolioPage.html">Портфолио</a>
+            </div>
+            <div class="burger__link"><a href="#">Калькулятор</a></div>
+            <div class="burger__linkLast">
+                <a href="contactsPage.html">Контакты</a>
+            </div>
+            <button class="burger__btn">бесплатная консультация</button>
+            <p class="burger__address">
+                Адрес офиса: г. Москва, Рязанский проспект, 2, стр. 8б
+            </p>
+        </div>
     </div>
 </div>
 
@@ -168,6 +188,10 @@
             </p>
             <div class="projectsDetailMain__content">
                 <div class="projectsDetailMain__left">
+                    <h1 class="projectsDetailMain__title-mobile">
+                        Проект каменного <br />
+                        дома Oxford
+                    </h1>
                     <div class="projectsDetailMain__image">
                         <div class="mySwiper2">
                             <div class="swiper-wrapper">
@@ -208,6 +232,7 @@
                                     />
                                 </div>
                             </div>
+                            <div class="swiper-pagination2"></div>
                         </div>
                     </div>
                     <div class="projectsDetailMain__imageList">
@@ -290,11 +315,11 @@
                     </div>
                 </div>
                 <div class="projectsDetailMain__right">
-                    <h2 class="projectsDetailMain__title">
+                    <h1 class="projectsDetailMain__title">
                         Проект <br />
                         каменного дома <br />
                         Oxford
-                    </h2>
+                    </h1>
                     <p class="projectsDetailMain__desc">
                         Наш новый проект ГОЛЬФ-ЗАВИДОВО разработан в стиле
                         минимализм. Сейчас дом уже строится — в коттеджном
@@ -359,13 +384,17 @@
             <div class="projectsDetailPlan__list">
                 <div class="projectsDetailPlan__card-plan">
                     <p>План первого этажа</p>
-                    <div class="projectsDetailPlan__photo">
+                    <div
+                        class="projectsDetailPlan__photo projectsDetailPlan__photo-btn1"
+                    >
                         <img src="img/sprites/detail_plan1.jpg" alt="plan1" />
                     </div>
                 </div>
                 <div class="projectsDetailPlan__card-plan">
                     <p>План второго этажа</p>
-                    <div class="projectsDetailPlan__photo">
+                    <div
+                        class="projectsDetailPlan__photo projectsDetailPlan__photo-btn2"
+                    >
                         <img src="img/sprites/detail_plan2.jpg" alt="plan2" />
                     </div>
                 </div>
@@ -421,6 +450,30 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="modal-photo modal-photo1">
+    <div>
+        <div class="modal-photo-close modal-photo-close1">
+            <img src="img/sprites/close_image.svg" alt="close_image" />
+        </div>
+        <img
+            class="modal-photo--inner"
+            src="img/sprites/detail_plan1.jpg"
+            alt="plan1"
+        />
+    </div>
+</div>
+<div class="modal-photo modal-photo2">
+    <div>
+        <div class="modal-photo-close modal-photo-close2">
+            <img src="img/sprites/close_image.svg" alt="close_image" />
+        </div>
+        <img
+            class="modal-photo--inner"
+            src="img/sprites/detail_plan2.jpg"
+            alt="plan1"
+        />
     </div>
 </div>
 
@@ -976,12 +1029,12 @@
                 <div class="footer__links">
                     <div class="footer__linksLeft">
                         <a href="projectsPage.html">Проекты</a>
-                        <a href="#">О компании</a>
-                        <a href="#">Портфолио</a>
+                        <a href="aboutPage.html">О компании</a>
+                        <a href="portfolioPage.html">Портфолио</a>
                     </div>
                     <div class="footer__linksRight">
                         <a href="#">Калькулятор</a>
-                        <a href="#">Контакты</a>
+                        <a href="contactsPage.html">Контакты</a>
                     </div>
                 </div>
             </div>
@@ -989,6 +1042,6 @@
     </div>
 </footer>
 
-        <script src="js/main.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -1,0 +1,41 @@
+.aboutPageInfo {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: #23272b;
+        font-size: 60px;
+        font-family: Lack;
+        text-transform: uppercase;
+        max-width: 420px;
+    }
+
+    &__text {
+        max-width: 640px;
+    }
+
+    &__text li {
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+
+    &__article1 {
+        color: #23272b;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 145%;
+    }
+
+    &__article2,
+    &__article3 {
+        color: #23272b;
+        font-size: 18px;
+        font-family: Inter;
+        line-height: 145%;
+    }
+}
