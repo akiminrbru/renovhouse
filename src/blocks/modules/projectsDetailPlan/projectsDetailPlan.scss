@@ -379,7 +379,7 @@
 .lightbox-prev,
 .lightbox-next {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
+
     color: #fff;
     padding: 9px;
     top: 45%;
@@ -394,4 +394,11 @@
 .lightbox-prev:hover,
 .lightbox-next:hover {
     opacity: 0.8;
+}
+
+.fa-angle-left:before {
+    content: url("/img/sprites/detail_arrowleft.svg");
+}
+.fa-angle-right:before {
+    content: url("/img/sprites/detail_arrowright.svg");
 }
