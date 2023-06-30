@@ -10,4 +10,4 @@ import "./import/swiper"
 import "./import/showSettings"
 import "./import/showImage"
 import './import/fullComplect'
-
+import './import/dynamicAdapt'

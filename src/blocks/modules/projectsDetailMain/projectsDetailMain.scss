@@ -77,15 +77,6 @@
         }
     }
 
-    &__title-mobile {
-        font-family: "Lack", sans-serif;
-        color: #23272b;
-        font-size: 40px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        display: none;
-    }
-
     &__title {
         font-family: "Lack", sans-serif;
         color: #23272b;
@@ -272,14 +263,6 @@
         &__content {
             display: block;
         }
-
-        &__title {
-            display: none;
-        }
-
-        &__title-mobile {
-            display: block;
-        }
     }
 }
 
@@ -287,6 +270,10 @@
     .projectsDetailMain {
         &__route {
             margin-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 36px;
         }
     }
 }
@@ -320,14 +307,9 @@
             padding-bottom: 39px;
         }
 
-        &__title-mobile {
-            color: #23272b;
+        &__title {
             font-size: 24px;
-            font-family: "Lack", sans-serif;
             line-height: 130%;
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 20px;
         }
 
         &__calculator-wrapper {
