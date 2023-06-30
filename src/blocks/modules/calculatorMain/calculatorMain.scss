@@ -1,0 +1,30 @@
+.calculator {
+    padding-top: 128px;
+    padding-bottom: 117px;
+
+    &__route {
+        color: #23272b;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    &__route a {
+        color: #23272b;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__route a:hover {
+        color: #a78b73;
+    }
+
+    &__title {
+        color: #23272b;
+        font-size: 60px;
+        font-family: "Lack", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+}

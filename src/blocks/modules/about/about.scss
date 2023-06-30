@@ -1,11 +1,9 @@
-@import "../../../styles/helpers/variables";
-
 .about {
     padding-top: 100px;
     padding-bottom: 120px;
     overflow: hidden;
 
-    &__inner h2 {
+    &__title {
         font-family: "Lack", sans-serif;
         margin-bottom: 20px;
         font-weight: 400;
@@ -20,7 +18,7 @@
         justify-content: space-between;
     }
 
-    &__title {
+    &__text {
         max-width: 565px;
         font-weight: 500;
         font-size: 20px;
@@ -72,7 +70,7 @@
 
     &__left a:hover {
         cursor: pointer;
-        background: #000;
+        background: #b28864;
     }
 }
 
@@ -89,7 +87,7 @@
         padding-left: 64px;
     }
 
-    &__inner h2 {
+    &__title {
         font-family: "Lack", sans-serif;
         font-weight: 400;
         font-size: 60px;
@@ -130,8 +128,7 @@
 
     &__btn a:hover {
         cursor: pointer;
-        background: #fff;
-        color: #000;
+        background: #b28864;
     }
 
     &__btn img {
@@ -149,12 +146,12 @@
     .about {
         padding-bottom: 160px;
 
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle1200;
             line-height: 130%;
         }
 
-        &__title {
+        &__text {
             font-size: 18px;
         }
 
@@ -178,7 +175,7 @@
     }
 
     .banner {
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle1200;
             line-height: 130%;
         }
@@ -189,11 +186,11 @@
     .about {
         padding-bottom: 180px;
 
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle992;
         }
 
-        &__title {
+        &__text {
             font-size: 17px;
         }
 
@@ -223,7 +220,7 @@
             height: auto;
         }
 
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle992;
         }
 
@@ -241,11 +238,11 @@
     .about {
         padding-bottom: 200px;
 
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle768;
         }
 
-        &__title {
+        &__text {
             font-size: 16px;
         }
 
@@ -269,7 +266,7 @@
             background-image: none;
             padding-left: 0;
         }
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle768;
         }
 
@@ -288,11 +285,11 @@
         padding-top: 43px;
         padding-bottom: 180px;
 
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle600;
         }
 
-        &__title {
+        &__text {
             font-size: 15px;
             margin-bottom: 0;
         }
@@ -340,7 +337,7 @@
             padding-top: 48px;
         }
 
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle600;
         }
 

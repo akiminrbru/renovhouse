@@ -19,7 +19,6 @@
 .swiper5 {
     overflow: hidden;
     max-width: 1177px;
-    padding-bottom: 62px;
 }
 
 .swiper5 .swiper-pagination5 {
@@ -34,4 +33,68 @@
     border-radius: 50% !important;
     background-color: black !important;
     z-index: 2;
+}
+
+.swiper5 .swiper-wrapper {
+    height: auto;
+}
+
+.swiper5 .swiper-slide {
+    height: auto;
+}
+
+.swiper5 .swiper-slide img {
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .aboutPageCert {
+        &__title {
+            font-size: $fontTitle1200;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutPageCert {
+        &__title {
+            font-size: $fontTitle992;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutPageCert {
+        &__title {
+            font-size: $fontTitle768;
+        }
+    }
+
+    .swiper5 .swiper-pagination5 .swiper-pagination-bullet {
+        background-color: #b6b6b6 !important;
+    }
+
+    .swiper5 .swiper-pagination5 .swiper-pagination-bullet-active {
+        background-color: #000 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutPageCert {
+        padding-bottom: 76px;
+        &__title {
+            font-size: $fontTitle600;
+            margin-bottom: 22px;
+        }
+    }
+
+    .swiper5 .swiper-pagination5 .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+    }
+
+    .swiper5 .swiper-pagination5 {
+        margin-top: 17px;
+    }
 }

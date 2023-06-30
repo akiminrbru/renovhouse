@@ -9,8 +9,13 @@
     }
 
     &__route a {
+        transition: all 0.2s ease-in-out;
         text-decoration: none;
         color: #23272b;
+    }
+
+    &__route a:hover {
+        color: #a78b73;
     }
 
     &__title {
@@ -24,10 +29,29 @@
     &__card {
         display: flex;
         width: 100%;
+        padding-bottom: 45px;
+        margin-bottom: 45px;
+        border-bottom: 1px solid #cecece;
+    }
+
+    &__card-last {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+
+    &__card2 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    &__card2 &__left {
+        margin-right: 0;
     }
 
     &__left {
-        width: 68.54%;
+        width: 63.93%;
         margin-right: 50px;
     }
 
@@ -40,12 +64,16 @@
         margin-bottom: 20px;
     }
 
+    &__prop-wrapper {
+        width: 330px;
+        border-bottom: 1px solid #e9e9e9;
+    }
+
     &__prop {
         display: flex;
         justify-content: space-between;
         max-width: 266px;
         padding-bottom: 35px;
-        border-bottom: 1px solid #cecece;
     }
 
     &__prop-left {
@@ -75,14 +103,43 @@
     }
 
     &__info-number {
+        white-space: nowrap;
         color: #23272b;
         font-size: 22px;
         font-weight: 600;
     }
 
     &__info-text {
+        white-space: nowrap;
         color: #7e7e7e;
         font-size: 14px;
+    }
+
+    &__btn {
+        text-align: center;
+        margin-top: 67px;
+    }
+
+    &__btn button {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 50px;
+        background: #a78b73;
+        border: 0;
+        padding: 17px 62px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__btn button:hover {
+        cursor: pointer;
+        background: #000;
+    }
+
+    &__hide {
+        display: none;
     }
 }
 
@@ -90,9 +147,232 @@
     max-width: 100%;
     height: auto;
     overflow: hidden;
+    position: relative;
+    display: flex;
 }
 
-.swiper6 .swiper-slider {
-    width: 100%;
+.swiper .swiper-wrapper {
     height: auto;
+}
+
+.swiper6 .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.swiper6 .swiper-pagination6 {
+    display: none;
+}
+
+.swiper6 .swiper-arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper6 .swiper-prev6 {
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 17px;
+}
+
+.swiper6 .swiper-next6 {
+    z-index: 1;
+    cursor: pointer;
+    margin-right: 17px;
+}
+
+@media (max-width: 1200px) {
+    .portfolioPageMain {
+        &__title {
+            font-size: $fontTitle1200;
+        }
+
+        &__name {
+            font-size: 28px;
+        }
+
+        &__info-number {
+            font-size: 21px;
+        }
+
+        &__prop-wrapper {
+            width: 100%;
+            border-bottom: 1px solid #e9e9e9;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+    .portfolioPageMain {
+        &__left {
+            margin-right: 20px;
+        }
+
+        &__card2 {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .portfolioPageMain {
+        &__title {
+            font-size: $fontTitle992;
+        }
+
+        &__name {
+            font-size: 24px;
+            margin-top: 20px;
+            max-width: 100%;
+            text-transform: none;
+        }
+
+        &__prop-wrapper {
+            width: 330px;
+            border-top: 1px solid #e9e9e9;
+            border-bottom: 1px solid #e9e9e9;
+        }
+
+        &__prop {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 0;
+        }
+
+        &__info {
+            margin-top: 20px;
+        }
+
+        &__info-number {
+            font-size: 20px;
+        }
+
+        &__card {
+            flex-direction: column;
+            border: 0;
+            padding-bottom: 0;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__card2 {
+            gap: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolioPageMain {
+        &__title {
+            font-size: $fontTitle768;
+        }
+
+        &__name {
+            font-size: 20px;
+            padding-bottom: 0px;
+        }
+
+        &__prop {
+            padding-top: 11px;
+            padding-bottom: 11px;
+            border: 0;
+        }
+
+        &__info-number {
+            font-size: 19px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolioPageMain {
+        padding-top: 100px;
+        padding-bottom: 60px;
+
+        &__title {
+            font-size: $fontTitle600;
+        }
+
+        &__route {
+            font-size: 13px;
+        }
+
+        &__card {
+            margin-bottom: 30px;
+        }
+
+        &__card:last-child {
+            margin-bottom: 35px;
+        }
+
+        &__name {
+            font-size: 16px;
+        }
+
+        &__prop-wrapper {
+            width: 100%;
+            border-top: 1px solid #e9e9e9;
+            border-bottom: 1px solid #e9e9e9;
+            margin-top: 11px;
+            margin-bottom: 11px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+        }
+
+        &__prop-item {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        &__info-number {
+            font-size: 18px;
+        }
+
+        &__prop {
+            max-width: 241px;
+        }
+
+        &__prop-left {
+            gap: 10px;
+        }
+
+        &__prop-right {
+            gap: 10px;
+        }
+
+        &__info {
+            margin-top: 0;
+            max-width: 332px;
+            justify-content: space-between;
+            gap: 0;
+        }
+
+        &__btn {
+            margin-top: 5px;
+        }
+    }
+
+    .swiper6 .swiper-slider img {
+        border-radius: 10px;
+    }
+
+    .swiper6 .swiper-arrows {
+        display: none;
+    }
+
+    .swiper6 .swiper-pagination6 {
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+        display: block;
+    }
 }

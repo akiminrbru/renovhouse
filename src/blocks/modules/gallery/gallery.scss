@@ -3,14 +3,14 @@
 .gallery {
     padding-bottom: 120px;
 
-    &__title {
+    &__title-wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 48px;
     }
 
-    &__title h2 {
+    &__title {
         font-family: "Lack", sans-serif;
         font-weight: 400;
         font-size: 60px;
@@ -40,7 +40,6 @@
     }
 
     &__content {
-        border-radius: 15px;
         overflow: hidden;
     }
 
@@ -129,6 +128,10 @@
         aspect-ratio: 1.45/1;
         object-fit: cover;
     }
+
+    .gallery__btns label:hover {
+        background-color: #d9d5d5;
+    }
 }
 
 .gallery__card.active {
@@ -161,14 +164,16 @@
     height: 100%;
 }
 
-.swiper-slide {
+.swiper .swiper-slide {
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide img {
+.swiper .swiper-slide img {
     width: 100%;
     height: 100%;
+    display: block;
+    border-radius: 15px;
 }
 
 .swiper-button-next {
@@ -246,7 +251,7 @@
 
 @media (max-width: 1200px) {
     .gallery {
-        &__title h2 {
+        &__title {
             font-size: $fontTitle1200;
             line-height: 130%;
         }
@@ -255,17 +260,17 @@
 
 @media (max-width: 992px) {
     .gallery {
-        &__title h2 {
+        &__title {
             font-size: $fontTitle992;
             margin-bottom: 18px;
         }
 
-        &__title {
+        &__title-wrapper {
             display: flex;
             align-items: start;
             justify-content: flex-start;
             flex-direction: column;
-            margin-bottom: 48px;
+            margin-bottom: 28px;
         }
 
         &__btns {
@@ -274,10 +279,6 @@
 
         &__card h3 {
             font-size: 16px;
-        }
-
-        &__title {
-            margin-bottom: 28px;
         }
     }
 
@@ -324,7 +325,7 @@
 
 @media (max-width: 768px) {
     .gallery {
-        &__title h2 {
+        &__title {
             font-size: $fontTitle768;
         }
 
@@ -386,7 +387,7 @@
 
 @media (max-width: 600px) {
     .gallery {
-        &__title h2 {
+        &__title {
             font-size: $fontTitle600;
         }
 
@@ -399,5 +400,20 @@
             font-size: 13px;
             max-width: 184px;
         }
+
+        &__content {
+            overflow: visible;
+        }
+    }
+
+    .swiper {
+        margin-left: -25px;
+        margin-right: -25px;
+        width: calc(100% + 50px);
+        max-width: none;
+    }
+
+    .swiper .swiper-slide img {
+        border-radius: 0px;
     }
 }

@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
+    spaceBetween: 20,
     pagination: {
       el: '.swiper-pagination',
     },
@@ -18,6 +18,7 @@ const swiper = new Swiper('.swiper', {
 const swiper1 = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
+    spaceBetween: 20,
     loop: true,  
     // If we need pagination
     pagination: {
@@ -69,6 +70,7 @@ let swiper3 = new Swiper(".mySwiper", {
 
 let swiper2 = new Swiper(".mySwiper2", {
   loop: true,
+  spaceBetween: 20,
   thumbs: {
     swiper: swiper3,
   },
@@ -76,9 +78,6 @@ let swiper2 = new Swiper(".mySwiper2", {
     el: '.swiper-pagination2',
   },
   breakpoints: {
-    100: {
-      
-    },
     600: {
       thumbs: {
         swiper: swiper3,
@@ -106,7 +105,7 @@ const swiper4 = new Swiper('.swiper4', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 20,
-  slidesPerView: 2,
+  slidesPerView: 1,
 
   pagination: {
     el: '.swiper-pagination4',
@@ -117,6 +116,11 @@ const swiper4 = new Swiper('.swiper4', {
     nextEl: '.swiper-next4',
     prevEl: '.swiper-prev4',
   },
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+    },
+},
 });
 
 const swiperPrev4 = document.getElementById("swiper-next4");
@@ -134,19 +138,30 @@ if (swiperPrev4 && swiperNext4 ) {
 const swiper5 = new Swiper('.swiper5', {
   direction: 'horizontal',
   loop: true,
-  spaceBetween: 23,
-  slidesPerView: 4,
+  spaceBetween: 20,
+  slidesPerView: 2,
 
   pagination: {
     el: '.swiper-pagination5',
     clickable: true,
   },
+
+  breakpoints: {
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 23,
+    },
+},
 });
 
 const swiper6 = new Swiper('.swiper6', {
   direction: 'horizontal',
   loop: true,
-
+  spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination6',
     clickable: true,

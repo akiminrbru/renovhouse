@@ -18,24 +18,25 @@
         display: none;
     }
 
-    &__article1 {
+    &__desc {
+        line-height: 145%;
         color: #23272b;
+    }
+
+    &__article1 {
         margin-bottom: 25px;
     }
 
     &__article2 {
-        color: #23272b;
         margin-bottom: 25px;
     }
 
     &__article3 {
-        color: #23272b;
         margin-bottom: 25px;
         margin-left: 25px;
     }
 
     &__article4 {
-        color: #23272b;
         margin-bottom: 25px;
     }
 
@@ -154,10 +155,12 @@
     }
 
     .projectsDetailDesc__btn1 label {
+        color: #797979;
         font-size: 14px;
     }
 
     .projectsDetailDesc__btn2 label {
+        color: #797979;
         font-size: 14px;
     }
 }

@@ -18,3 +18,15 @@ close.addEventListener("click", () => {
     open.classList.remove("closeBtn");
     close.classList.add("closeBtn");
 });
+
+burger.addEventListener('click', () => {
+    burger__content.classList.remove("open");
+    burger__content.classList.add("close");
+    burger.classList.toggle('burger__back');
+    open.classList.remove("closeBtn");
+    close.classList.add("closeBtn");
+})
+
+burger__content.addEventListener('click', (e) => {
+    e.stopPropagation();
+})

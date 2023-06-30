@@ -14,7 +14,7 @@
         border-left: 1px solid #434648;
     }
 
-    &__info h2 {
+    &__title {
         max-width: 400px;
         font-family: "Lack", sans-serif;
         font-weight: 400;
@@ -50,6 +50,14 @@
         align-items: center;
     }
 
+    &__messengers a svg path {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__messengers a:hover svg path {
+        fill: #a78b73;
+    }
+
     &__messengers a:first-child {
         margin-right: 10px;
     }
@@ -66,7 +74,7 @@
         width: 530px;
     }
 
-    &__form h3 {
+    &__form-title {
         font-family: "Lack", sans-serif;
         font-weight: 400;
         font-size: 36px;
@@ -108,7 +116,7 @@
 
     &__form button:hover {
         cursor: pointer;
-        background: #000;
+        background: #b28864;
     }
 
     &__nav {
@@ -131,6 +139,7 @@
         color: #ffffff;
         text-decoration: none;
         margin-left: 25px;
+        transition: all 0.2s ease-in-out;
     }
 
     &__links a:first-child {
@@ -138,7 +147,7 @@
     }
 
     &__links a:hover {
-        color: gray;
+        color: #a78b73;
     }
 
     &__linksRight {
@@ -150,14 +159,18 @@
         color: #fff;
     }
 
+    &__connect {
+        transition: all 0.2s ease-in-out;
+    }
+
     &__connect:hover {
-        text-decoration: underline;
+        color: #a78b73;
     }
 }
 
 @media (max-width: 1200px) {
     .footer {
-        &__info h2 {
+        &__title {
             font-size: $fontTitle1200;
             line-height: 130%;
         }
@@ -180,7 +193,7 @@
             border-top: 1px solid #434648;
         }
 
-        &__form h3 {
+        &__form-title {
             font-size: 34px;
         }
     }
@@ -188,7 +201,7 @@
 
 @media (max-width: 992px) {
     .footer {
-        &__info h2 {
+        &__title {
             font-size: $fontTitle992;
         }
 
@@ -201,7 +214,7 @@
             line-height: 31px;
         }
 
-        &__form h3 {
+        &__form-title {
             font-size: 30px;
         }
 
@@ -237,7 +250,7 @@
 
 @media (max-width: 768px) {
     .footer {
-        &__info h2 {
+        &__title {
             font-size: $fontTitle768;
         }
 
@@ -249,7 +262,7 @@
             font-size: 18px;
         }
 
-        &__form h3 {
+        &__form-title {
             font-size: 28px;
         }
     }
@@ -260,7 +273,7 @@
         padding-top: 45px;
         padding-bottom: 58px;
 
-        &__info h2 {
+        &__title {
             font-size: $fontTitle600;
             margin-bottom: 25px;
         }
@@ -282,7 +295,7 @@
             color: #797979;
         }
 
-        &__form h3 {
+        &__form-title {
             font-size: 24px;
             margin-bottom: 23px;
         }

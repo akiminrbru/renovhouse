@@ -11,6 +11,11 @@
     &__route a {
         text-decoration: none;
         color: #23272b;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__route a:hover {
+        color: #a78b73;
     }
 
     &__right {
@@ -82,8 +87,32 @@
         line-height: 135%;
     }
 
+    &__social a svg path {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__social a:hover svg path {
+        fill: #a78b73;
+    }
+
     &__social a {
         display: inline-block;
+    }
+
+    &__number {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__number:hover {
+        color: #a78b73;
+    }
+
+    &__email {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__email:hover {
+        color: #a78b73;
     }
 
     &__right {
@@ -123,6 +152,7 @@
 
 @media (max-width: 992px) {
     .contacts {
+        padding-bottom: 100px;
         &__title {
             font-size: $fontTitle992;
             margin-bottom: 40px;
@@ -135,10 +165,6 @@
         &__right {
             width: 100%;
             max-width: 100%;
-        }
-
-        &__left li {
-            margin-bottom: 10px;
         }
 
         &__left ul {
@@ -182,19 +208,20 @@
 @media (max-width: 600px) {
     .contacts {
         padding-top: 100px;
-        padding-bottom: 80px;
+        padding-bottom: 0;
 
         &__title {
             font-size: $fontTitle600;
-            margin-bottom: 20px;
+            margin-bottom: 37px;
         }
 
         &__route {
             margin-bottom: 15px;
+            font-size: 13px;
         }
 
         &__content {
-            gap: 40px;
+            gap: 38px;
         }
 
         &__number {
@@ -214,7 +241,15 @@
         }
 
         &__left ul {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        &__right {
+            border-radius: 0;
+            margin-left: -25px;
+            margin-right: -25px;
+            width: calc(100% + 50px);
+            max-width: none;
         }
     }
 }

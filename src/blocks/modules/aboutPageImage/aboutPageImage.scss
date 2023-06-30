@@ -20,9 +20,9 @@
     &__text {
         color: #23272b;
         font-size: 16px;
-        font-family: Inter;
         font-weight: 600;
         line-height: 145%;
+        white-space: nowrap;
     }
 
     &__square {
@@ -30,7 +30,13 @@
         font-size: 60px;
         font-weight: 500;
         text-transform: uppercase;
+        white-space: nowrap;
     }
+
+    &__square span {
+        font-size: 30px;
+    }
+
     &__slider {
         display: flex;
         align-items: center;
@@ -43,11 +49,13 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 15px;
 }
 
-.swiper4.swiper-slide img {
+.swiper4 .swiper-slide img {
+    width: 100%;
+    height: 100%;
     display: block;
+    border-radius: 15px;
 }
 
 .swiper-prev4 {
@@ -58,4 +66,151 @@
 .swiper-next4 {
     margin-right: -68px;
     cursor: pointer;
+}
+
+.swiper4 .swiper-pagination4 .swiper-pagination-bullet {
+    background-color: #b6b6b6 !important;
+}
+
+.swiper4 .swiper-pagination4 .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+}
+
+@media (min-width: 1450px) {
+    .swiper4 .swiper-pagination4 {
+        display: none;
+    }
+}
+
+@media (max-width: 1450px) {
+    .swiper-prev4 {
+        display: none;
+    }
+
+    .swiper-next4 {
+        display: none;
+    }
+
+    .swiper4 .swiper-pagination4 {
+        text-align: center;
+        margin-top: 17px;
+    }
+
+    .swiper4 .swiper-pagination4 .swiper-pagination-bullet {
+        background-color: black !important;
+        border-radius: 50% !important;
+        width: 9px;
+        height: 9px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutPageImage {
+        &__title {
+            font-size: $fontTitle1200;
+            max-width: 600px;
+        }
+
+        &__square {
+            font-size: 50px;
+        }
+
+        &__square span {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutPageImage {
+        &__title {
+            font-size: $fontTitle992;
+        }
+
+        &__square {
+            font-size: 40px;
+        }
+
+        &__square span {
+            font-size: 24px;
+        }
+
+        &__info {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutPageImage {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        &__title {
+            font-size: $fontTitle768;
+        }
+
+        &__square {
+            font-size: 35px;
+        }
+
+        &__square span {
+            font-size: 18px;
+        }
+    }
+
+    .swiper4 .swiper-pagination4 .swiper-pagination-bullet {
+        background-color: #b6b6b6 !important;
+    }
+
+    .swiper4 .swiper-pagination4 .swiper-pagination-bullet-active {
+        background-color: #000 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutPageImage {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &__info {
+            margin-bottom: 24px;
+        }
+
+        &__title {
+            font-size: $fontTitle600;
+            max-width: 314px;
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__square {
+            font-size: 30px;
+        }
+
+        &__square span {
+            font-size: 16px;
+        }
+    }
+
+    .swiper4 .swiper-slide img {
+        border-radius: 10px;
+    }
+
+    .swiper4 .swiper-pagination4 {
+        margin-top: 15px;
+    }
+
+    .swiper4 .swiper-pagination4 .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+    }
 }

@@ -11,6 +11,11 @@
     &__route a {
         color: #23272b;
         text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__route a:hover {
+        color: #a78b73;
     }
 
     &__title {
@@ -36,5 +41,92 @@
         font-size: 36px;
         font-weight: 500;
         line-height: 135%;
+    }
+}
+
+@media (max-width: 1340px) {
+    .aboutPageMain {
+        &__background {
+            padding-bottom: 230px;
+            padding-top: 230px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutPageMain {
+        &__title {
+            font-size: $fontTitle1200;
+        }
+
+        &__text {
+            font-size: 28px;
+        }
+
+        &__background {
+            padding-bottom: 210px;
+            padding-top: 210px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutPageMain {
+        &__title {
+            font-size: $fontTitle992;
+        }
+
+        &__text {
+            font-size: 25px;
+        }
+
+        &__background {
+            padding-bottom: 180px;
+            padding-top: 180px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutPageMain {
+        &__title {
+            font-size: $fontTitle768;
+        }
+
+        &__text {
+            font-size: 20px;
+            max-width: 350px;
+        }
+
+        &__background {
+            padding-bottom: 150px;
+            padding-top: 150px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutPageMain {
+        padding-top: 100px;
+        padding-bottom: 19px;
+
+        &__title {
+            font-size: $fontTitle600;
+        }
+
+        &__route {
+            font-size: 13px;
+        }
+
+        &__background {
+            background-image: url("../../../img/sprites/about_backgroundmini.jpg");
+            padding-bottom: 231px;
+            padding-top: 45px;
+        }
+
+        &__text {
+            font-size: 17px;
+            max-width: 279px;
+        }
     }
 }

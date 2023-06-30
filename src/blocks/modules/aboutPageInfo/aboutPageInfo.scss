@@ -10,7 +10,7 @@
     &__title {
         color: #23272b;
         font-size: 60px;
-        font-family: Lack;
+        font-family: "Lack", sans-serif;
         text-transform: uppercase;
         max-width: 420px;
     }
@@ -24,6 +24,10 @@
         margin-bottom: 20px;
     }
 
+    &__text li:last-child {
+        margin-bottom: 0;
+    }
+
     &__article1 {
         color: #23272b;
         font-size: 24px;
@@ -35,7 +39,83 @@
     &__article3 {
         color: #23272b;
         font-size: 18px;
-        font-family: Inter;
         line-height: 145%;
+    }
+}
+
+@media (max-width: 1340px) {
+}
+
+@media (max-width: 1200px) {
+    .aboutPageInfo {
+        &__title {
+            font-size: $fontTitle1200;
+            margin-bottom: 30px;
+            max-width: 100%;
+        }
+
+        &__article1 {
+            font-size: 22px;
+        }
+
+        &__inner {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutPageInfo {
+        &__title {
+            font-size: $fontTitle992;
+        }
+
+        &__article1 {
+            font-size: 20px;
+        }
+
+        &__article2,
+        &__article3 {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutPageInfo {
+        &__title {
+            font-size: $fontTitle768;
+        }
+
+        &__article1 {
+            font-size: 19px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutPageInfo {
+        padding-top: 36px;
+        padding-bottom: 36px;
+
+        &__title {
+            font-size: $fontTitle600;
+            margin-bottom: 15px;
+        }
+
+        &__article1 {
+            font-size: 18px;
+            max-width: 340px;
+        }
+
+        &__article2,
+        &__article3 {
+            font-size: 16px;
+            max-width: 340px;
+        }
+
+        &__text li:last-child {
+            margin-bottom: 15px;
+        }
     }
 }

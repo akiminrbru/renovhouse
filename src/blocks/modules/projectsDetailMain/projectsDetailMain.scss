@@ -14,6 +14,11 @@
     &__route a {
         text-decoration: none;
         color: #23272b;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__route a:hover {
+        color: #a78b73;
     }
 
     &__content {
@@ -27,7 +32,6 @@
     &__image {
         max-width: 831px;
         margin-bottom: 9px;
-        border-radius: 20px;
         overflow: hidden;
     }
 
@@ -162,22 +166,8 @@
 
     &__calculator:hover {
         cursor: pointer;
-        background: #000;
+        background: #b28864;
     }
-}
-
-.mySwiper2.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.mySwiper.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .swiper-slide {
@@ -197,12 +187,12 @@
 }
 
 .mySwiper .swiper-slide {
-    width: 120p;
     height: auto;
     border-radius: 10px !important;
+    cursor: pointer;
 }
 
-.mySwiper .swiper-slide-thumb-active {
+.mySwiper .swiper-slide-thumb-active img {
     border: 3px solid #23272b;
     overflow: hidden;
 }
@@ -212,20 +202,16 @@
     height: auto;
 }
 
-.mySwiper.swiper-slide img {
+.mySwiper .swiper-slide img {
+    border-radius: 10px;
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 6px !important;
 }
 
-.mySwiper2.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 6px !important;
+.mySwiper2 .swiper-slide img {
+    border-radius: 15px;
 }
 
 @media (max-width: 1350px) {
@@ -239,14 +225,6 @@
 
         &__right {
             margin-top: 30px;
-        }
-
-        &__title {
-            display: none;
-        }
-
-        &__title-mobile {
-            display: block;
         }
     }
 }
@@ -264,10 +242,6 @@
 
 @media (max-width: 1250px) {
     .projectsDetailMain {
-        &__content {
-            display: block;
-        }
-
         &__image {
             max-width: 100%;
         }
@@ -293,6 +267,18 @@
 
         &__info {
             margin-bottom: 40px;
+        }
+
+        &__content {
+            display: block;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__title-mobile {
+            display: block;
         }
     }
 }
@@ -391,6 +377,10 @@
         &__imageList {
             display: none;
         }
+    }
+
+    .mySwiper2 .swiper-slide img {
+        border-radius: 10px;
     }
 }
 

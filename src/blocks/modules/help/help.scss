@@ -6,7 +6,7 @@
         display: flex;
         justify-content: space-between;
     }
-    &__inner h2 {
+    &__title {
         font-family: "Lack", sans-serif;
         font-weight: 400;
         font-size: 60px;
@@ -28,7 +28,7 @@
         cursor: pointer;
         background: #dadada;
     }
-    &__title {
+    &__card-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -71,10 +71,10 @@
 
 @media (max-width: 1200px) {
     .help {
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle1200;
         }
-        &__inner h2 br {
+        &__title br {
             display: none;
         }
         &__inner {
@@ -91,7 +91,7 @@
 
 @media (max-width: 992px) {
     .help {
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle992;
         }
         &__name {
@@ -102,7 +102,7 @@
 
 @media (max-width: 768px) {
     .help {
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle768;
         }
         &__name {

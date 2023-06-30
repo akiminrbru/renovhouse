@@ -27,9 +27,10 @@ ul {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .container {
-        max-width: 90%;
+        max-width: 100%;
+        margin: 0 25px;
     }
 }
 

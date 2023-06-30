@@ -3,7 +3,7 @@
 .projects {
     padding-bottom: 122px;
 
-    &__inner h2 {
+    &__title {
         font-family: "Lack", sans-serif;
         margin-bottom: 40px;
         font-weight: 400;
@@ -37,7 +37,6 @@
 
     &__image {
         width: 100%;
-        border-radius: 15px;
         overflow: hidden;
     }
 
@@ -105,7 +104,7 @@
 
     &__btn a:hover {
         cursor: pointer;
-        background: black;
+        background: #b28864;
     }
 
     &__btn button {
@@ -124,7 +123,7 @@
 
     &__btn button:hover {
         cursor: pointer;
-        background: black;
+        background: #b28864;
     }
 
     &__prop2 {
@@ -164,7 +163,6 @@
         height: auto;
         position: relative;
         overflow: hidden;
-        border-radius: 15px;
     }
 
     .swiper-pagination1 {
@@ -238,7 +236,6 @@
         height: auto;
         position: relative;
         overflow: hidden;
-        border-radius: 15px;
     }
 
     .swiper-pagination1 {
@@ -260,7 +257,7 @@
 
 @media (max-width: 1200px) {
     .projects {
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle1200;
             line-height: 130%;
         }
@@ -299,7 +296,7 @@
 
 @media (max-width: 992px) {
     .projects {
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle992;
         }
     }
@@ -308,7 +305,7 @@
 @media (max-width: 768px) {
     .projects {
         padding-bottom: 43px;
-        &__inner h2 {
+        &__title {
             margin-top: 100px;
             font-size: $fontTitle768;
         }
@@ -329,7 +326,7 @@
 
 @media (max-width: 600px) {
     .projects {
-        &__inner h2 {
+        &__title {
             margin-top: 46px;
             margin-bottom: 18px;
             font-size: $fontTitle600;
@@ -348,4 +345,12 @@
             display: none;
         }
     }
+
+    .swiper1 .swiper-slide img {
+        border-radius: 10px;
+    }
+}
+
+.swiper1 .swiper-slide img {
+    border-radius: 15px;
 }

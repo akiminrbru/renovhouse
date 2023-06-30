@@ -14,9 +14,13 @@
         justify-content: space-between;
     }
 
+    &__inner a {
+        transition: all 0.2s ease-in-out;
+    }
+
     &__inner a:hover {
         cursor: pointer;
-        color: gray;
+        color: #a78b73;
     }
 
     &__projectsLink,
@@ -54,17 +58,25 @@
         margin-left: 59px;
     }
 
-    &__mobile {
+    &__mobileLeft {
         display: none;
     }
 
-    &__mobile a:hover {
-        cursor: pointer;
-        color: gray;
+    &__logo {
+        display: block;
+    }
+
+    &__burgerClose {
+        display: block;
+    }
+
+    &__burgerOpen {
+        display: block;
     }
 }
 
 .burger {
+    z-index: 30;
     &__content {
         padding-top: 34px;
         padding-left: 24px;
@@ -72,11 +84,11 @@
         position: fixed;
         left: 0;
         bottom: 0;
-        top: 94px;
+        top: 99px;
         background: #fff;
         backdrop-filter: blur(2px);
-        z-index: 10;
         transform: translateX(-100%);
+        z-index: 30;
     }
 
     &__links a {
@@ -87,7 +99,7 @@
         text-decoration: none;
 
         &:hover {
-            color: gray;
+            color: #a78b73;
         }
     }
 
@@ -109,7 +121,13 @@
         font-size: 14px;
         font-weight: 500;
         text-transform: uppercase;
-        margin-bottom: 46px;
+        margin-bottom: 28px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__btn:hover {
+        cursor: pointer;
+        background: #b28864;
     }
 
     &__address {
@@ -127,8 +145,8 @@
     right: 0;
     bottom: 0;
     background: rgba(35, 39, 43, 0.3);
-    z-index: 10;
-    top: 94px;
+    z-index: 30;
+    top: 99px;
 }
 
 .open {
@@ -147,66 +165,54 @@
 
 @media (max-width: 1100px) {
     .header {
-        &__inner {
-            display: none;
-        }
-
         &__mobile {
-            padding-top: 18px;
-            padding-bottom: 13px;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 25px;
         }
 
         &__mobileLeft {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 28px;
+            display: block;
         }
 
-        &__burgerOpen {
-            width: 30px;
-            height: 30px;
-        }
-
-        &__burgerClose {
-            width: 30px;
-            height: 30px;
+        &__left,
+        &__calculatorLink,
+        &__contactsLink {
+            display: none;
         }
     }
 }
 
 @media (max-width: 600px) {
     .header {
-        &__burgerLogo {
+        &__inner {
+            height: 66px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__logo {
             width: 152px;
             height: 34px;
         }
 
-        &__burgerOpen {
-            width: 24px;
-            height: 24px;
-        }
-
-        &__burgerClose {
-            width: 24px;
-            height: 24px;
-        }
-
         &__numberLink {
             font-size: 14px;
-            line-height: 17px;
+            font-weight: 600;
+        }
+
+        &__right a:last-child {
+            margin-left: 0px;
         }
     }
 
     .burger {
-        top: 69px;
+        top: 67px;
     }
 
     .burger__content {
-        top: 69px;
+        top: 67px;
     }
 }

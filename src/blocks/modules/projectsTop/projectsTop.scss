@@ -14,6 +14,11 @@
     &__route a {
         text-decoration: none;
         color: #23272b;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__route a:hover {
+        color: #a78b73;
     }
 
     &__title {
@@ -100,7 +105,7 @@
 
     &__reset p:hover {
         cursor: pointer;
-        color: gray;
+        color: #b28864;
     }
 
     &__range-slider {
@@ -221,6 +226,11 @@
         padding-bottom: 0;
         margin-bottom: 21px;
         border-bottom: 0;
+
+        &__route {
+            font-size: 13px;
+        }
+
         &__left {
             flex-direction: column;
         }
@@ -381,14 +391,15 @@ input[type="checkbox"]:checked + label:after {
     gap: 4px;
     margin-top: 30px;
 }
+
 .price-input .field {
     display: flex;
-    padding: 8px 0 8px 11px;
-    height: 32px;
+    padding: 6.5px 0 6.5px 11px;
     align-items: center;
     border: 1.5px solid #c5c5c5;
     border-radius: 5px;
 }
+
 .field input {
     width: 100%;
     height: 100%;
@@ -398,7 +409,6 @@ input[type="checkbox"]:checked + label:after {
     -moz-appearance: textfield;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
     color: #000000;
 }
 
@@ -469,7 +479,7 @@ input[type="range"]::-moz-range-thumb {
 }
 .price-input2 .field2 {
     display: flex;
-    padding: 8px 0 8px 11px;
+    padding: 7px 0 7px 11px;
     height: 32px;
     align-items: center;
     border: 1.5px solid #c5c5c5;
@@ -484,7 +494,6 @@ input[type="range"]::-moz-range-thumb {
     -moz-appearance: textfield;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
     color: #000000;
 }
 

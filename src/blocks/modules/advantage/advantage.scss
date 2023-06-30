@@ -5,7 +5,7 @@
     padding-top: 103px;
     padding-bottom: 129px;
 
-    &__inner h2 {
+    &__title {
         font-family: "Lack", sans-serif;
         font-weight: 400;
         font-size: 60px;
@@ -41,7 +41,7 @@
         margin-bottom: 39px;
     }
 
-    &__card h3 {
+    &__card-title {
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
@@ -94,7 +94,8 @@
 
     &__cardReq a:hover {
         cursor: pointer;
-        background: #000;
+        background: #fff;
+        color: #23272a;
     }
 }
 
@@ -115,7 +116,7 @@
             padding-bottom: 40px;
         }
 
-        &__inner h2 {
+        &__title {
             margin-bottom: 20px;
         }
 
@@ -135,12 +136,12 @@
 
 @media (max-width: 1200px) {
     .advantage {
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle1200;
             line-height: 130%;
         }
 
-        &__card h3 {
+        &__card-title {
             font-size: 19px;
         }
 
@@ -156,11 +157,11 @@
 
 @media (max-width: 992px) {
     .advantage {
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle992;
         }
 
-        &__card h3 {
+        &__card-title {
             font-size: 17px;
         }
 
@@ -176,11 +177,11 @@
 
 @media (max-width: 768px) {
     .advantage {
-        &__inner h2 {
+        &__title {
             font-size: $fontTitle768;
         }
 
-        &__card h3 {
+        &__card-title {
             font-size: 16px;
         }
 
@@ -198,7 +199,8 @@
     .advantage {
         padding-top: 45px;
         padding-bottom: 45px;
-        &__inner h2 {
+
+        &__title {
             font-size: $fontTitle600;
             margin-bottom: 36px;
         }
@@ -208,7 +210,7 @@
             padding-bottom: 30px;
         }
 
-        &__card h3 {
+        &__card-title {
             font-size: 15px;
         }
 
@@ -220,7 +222,7 @@
             margin-bottom: 20px;
         }
 
-        &__card h3 {
+        &__card-title {
             margin-bottom: 10px;
         }
 
@@ -240,7 +242,7 @@
         }
 
         &__cardReq h4 {
-            max-width: auto;
+            max-width: 100%;
             font-size: 23px;
             margin-bottom: 78px;
         }
