@@ -11,3 +11,5 @@ import "./import/showSettings"
 import "./import/showImage"
 import './import/fullComplect'
 import './import/dynamicAdapt'
+import './import/showFeedback'
+import './import/calculator'

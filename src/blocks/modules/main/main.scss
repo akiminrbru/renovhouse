@@ -36,7 +36,7 @@
         align-items: center;
     }
 
-    &__bottom a {
+    &__bottom button {
         padding: 17px 45px 17px 45px;
         background: #a78b73;
         border-radius: 50px;
@@ -50,7 +50,7 @@
         text-decoration: none;
     }
 
-    &__bottom a:hover {
+    &__bottom button:hover {
         cursor: pointer;
         background: #b28864;
     }
@@ -74,6 +74,126 @@
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 2.4/1;
+}
+
+.feedback {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(35, 39, 42, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &__form {
+        padding: 60px 50px 70px 50px;
+        border-radius: 15px;
+        background: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: #23272b;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Lack", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        max-width: 353px;
+        margin-bottom: 15px;
+    }
+
+    &__desc {
+        max-width: 407px;
+        color: var(--1, #23272b);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 135%;
+        margin-bottom: 30px;
+    }
+
+    &__form-wrapper {
+        width: 100%;
+    }
+
+    &__form form input {
+        width: 100%;
+        border-radius: 5px;
+        background: #fff;
+        border: 0;
+        outline: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        color: #8d8d8d;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 135%;
+        margin-bottom: 15px;
+    }
+
+    &__form form button {
+        margin-top: 15px;
+        width: 100%;
+        border-radius: 50px;
+        background: #a78b73;
+        border: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 135%;
+        transition: all 0.2s ease-in-out;
+        margin-bottom: 25px;
+    }
+
+    &__form form button:hover {
+        cursor: pointer;
+        background-color: #b28864;
+    }
+
+    &__policy {
+        max-width: 365px;
+        text-align: center;
+        color: #797979;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 135%;
+    }
+
+    &__policy a {
+        color: #797979;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__policy a:hover {
+        color: #a78b73;
+    }
+
+    &__close {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.8);
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__open {
+        display: flex;
+    }
 }
 
 @media (max-width: 1340px) {
@@ -112,7 +232,7 @@
             line-height: 130%;
         }
 
-        &__bottom a {
+        &__bottom button {
             display: none;
         }
         &__bottom {
@@ -177,6 +297,58 @@
         &__info p {
             font-size: 15px;
             line-height: 130%;
+        }
+    }
+
+    .feedback {
+        &__form {
+            height: 100%;
+            width: 100%;
+            border-radius: 0;
+            padding: 67px 25px 70px 25px;
+        }
+
+        &__close {
+            top: 13px;
+            right: 13px;
+            width: 40px;
+            height: 40px;
+        }
+
+        &__title {
+            text-align: left;
+            color: #1c2129;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 130%;
+            margin-bottom: 10px;
+        }
+
+        &__desc {
+            text-align: left;
+            color: #1c2129;
+            font-size: 14px;
+            line-height: 135%;
+            margin-bottom: 20px;
+        }
+
+        &__form form input {
+            margin-bottom: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 23px;
+            font-size: 14px;
+            line-height: 135%;
+        }
+
+        &__form form button {
+            margin-top: 10px;
+        }
+
+        &__policy {
+            text-align: center;
+            font-size: 13px;
+            line-height: 135%;
         }
     }
 

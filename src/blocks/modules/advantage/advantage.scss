@@ -77,7 +77,7 @@
         margin-bottom: 102px;
     }
 
-    &__cardReq a {
+    &__cardReq button {
         background: #23272b;
         border-radius: 50px;
         padding: 17px 52px 17px 52px;
@@ -92,7 +92,7 @@
         text-decoration: none;
     }
 
-    &__cardReq a:hover {
+    &__cardReq button:hover {
         cursor: pointer;
         background: #fff;
         color: #23272a;
