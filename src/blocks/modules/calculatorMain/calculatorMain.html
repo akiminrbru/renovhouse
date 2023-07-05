@@ -1,348 +1,2066 @@
 <div class="calculator">
-    <div class="container">
-        <div class="calculator__inner">
-            <p class="calculator__route">
-                <a href="index.html">Главная</a> / Калькулятор
-            </p>
-            <div class="calculator__title-wrapper">
-                <h1 class="calculator__title">Калькулятор</h1>
-                <p class="calculator__reset">Сбросить все</p>
-            </div>
+	<div class="container">
+		<div class="calculator__inner">
+			<p class="calculator__route">
+				<a href="index.html">Главная</a> / Калькулятор
+			</p>
+			<div class="calculator__title-wrapper">
+				<h1 class="calculator__title">Калькулятор</h1>
+				<p class="calculator__reset">Сбросить все</p>
+			</div>
 
-            <div class="calculator__main">
-                <div class="calculator__steps">
-                    <div
-                        id="1"
-                        class="calculator__step calculator__step_active"
-                    >
-                        <h4 class="calculator__step-title">1. Фундамент</h4>
-                        <p class="calculator__step-price">500 000 руб</p>
-                    </div>
-                    <div id="2" class="calculator__step">
-                        <h4 class="calculator__step-title">2. Стены</h4>
-                        <p class="calculator__step-price">0 руб</p>
-                    </div>
-                    <div id="3" class="calculator__step">
-                        <h4 class="calculator__step-title">3. Перекрытия</h4>
-                        <p class="calculator__step-price">0 руб</p>
-                    </div>
-                    <div id="4" class="calculator__step">
-                        <h4 class="calculator__step-title">4. Кровля</h4>
-                        <p class="calculator__step-price">0 руб</p>
-                    </div>
-                    <div id="5" class="calculator__step">
-                        <h4 class="calculator__step-title">5. Лестница</h4>
-                        <p class="calculator__step-price">0 руб</p>
-                    </div>
-                    <div id="6" class="calculator__step">
-                        <h4 class="calculator__step-title">6. Фасад</h4>
-                        <p class="calculator__step-price">0 руб</p>
-                    </div>
-                    <div id="7" class="calculator__step">
-                        <h4 class="calculator__step-title">7. Окна, двери</h4>
-                        <p class="calculator__step-price">0 руб</p>
-                    </div>
-                    <div id="8" class="calculator__step">
-                        <h4 class="calculator__step-title">8. Результат</h4>
-                        <p class="calculator__step-price">0 руб</p>
-                    </div>
-                </div>
-                <div class="calculator__content">
-                    <div
-                        id="1"
-                        class="calculator__settings-wrapper calculator__settings-wrapper_active"
-                    >
-                        <div class="calculator__settings">
-                            <div class="calculator__settings-top">
-                                <div class="calculator__settings-top-square">
-                                    <p>1. Укажите размеры строения</p>
-                                    <div class="calculator__price-column">
-                                        <div>
-                                            <div class="slider3">
-                                                <div class="progress3"></div>
-                                            </div>
-                                            <div class="range-input3">
-                                                <input
-                                                    type="range"
-                                                    class="range-min3"
-                                                    min="10"
-                                                    max="350"
-                                                    value="10"
-                                                    step="1"
-                                                />
-                                                <input
-                                                    type="range"
-                                                    class="range-max3"
-                                                    min="10"
-                                                    max="350"
-                                                    value="350"
-                                                    step="1"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="price-input3">
-                                            <div class="field3">
-                                                <span>От</span>
-                                                <input
-                                                    type="number"
-                                                    class="input-min3"
-                                                    value="10"
-                                                />
-                                            </div>
-                                            <div class="field3">
-                                                <span>До</span>
-                                                <input
-                                                    type="number"
-                                                    class="input-max3"
-                                                    value="350"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="calculator__floor">
-                                    <p>2. Укажите этажность дома</p>
-                                    <div class="calculator__checkboxes">
-                                        <div>
-                                            <input
-                                                class="calculator__checkbox"
-                                                type="checkbox"
-                                                id="cfloor1"
-                                                name="cfloor1"
-                                                checked
-                                            />
-                                            <label for="cfloor1">1 этаж</label>
-                                        </div>
-                                        <div>
-                                            <input
-                                                class="calculator__checkbox"
-                                                type="checkbox"
-                                                id="cfloor2"
-                                                name="cfloor2"
-                                            />
-                                            <label for="cfloor2">2 этажа</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="calculator__settings-main">
-                                <h4 class="calculator__settings-main-title">
-                                    Шаг 1. Фундамент
-                                </h4>
-                                <p class="calculator__settings-main-choice">
-                                    Выберите материал для фундамента
-                                </p>
-                                <div class="calculator__settings-main-cards">
-                                    <div class="calculator__settings-main-card">
-                                        <img
-                                            src="img/sprites/calc_found1.png"
-                                            alt="found"
-                                        />
-                                        <h5>Ленточный на сваях</h5>
-                                    </div>
-                                    <div
-                                        class="calculator__settings-main-card calculator__settings-main-card_active"
-                                    >
-                                        <img
-                                            src="img/sprites/calc_found2.png"
-                                            alt="found"
-                                        />
-                                        <h5>Монолитная плита</h5>
-                                        <div class="calculator__select">
-                                            <div class="select">
-                                                <span class="selectLabel"
-                                                    >Толщина плиты</span
-                                                >
-                                                <div class="selectWrapper">
-                                                    <div
-                                                        class="selectCustom js-selectCustom"
-                                                    >
-                                                        <div
-                                                            class="selectCustom-trigger"
-                                                        >
-                                                            0.25
-                                                        </div>
-                                                        <div
-                                                            class="selectCustom-options"
-                                                        >
-                                                            <div
-                                                                class="selectCustom-option"
-                                                                data-value="0.25"
-                                                            >
-                                                                0.25
-                                                            </div>
-                                                            <div
-                                                                class="selectCustom-option"
-                                                                data-value="0.25"
-                                                            >
-                                                                0.3
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="calculator__select">
-                                            <div class="select">
-                                                <span class="selectLabel"
-                                                    >Толщина плиты</span
-                                                >
-                                                <div class="selectWrapper">
-                                                    <div
-                                                        class="selectCustom js-selectCustom2"
-                                                    >
-                                                        <div
-                                                            class="selectCustom-trigger"
-                                                        >
-                                                            0.3
-                                                        </div>
-                                                        <div
-                                                            class="selectCustom-options"
-                                                        >
-                                                            <div
-                                                                class="selectCustom-option"
-                                                                data-value="0.3"
-                                                            >
-                                                                0.3
-                                                            </div>
-                                                            <div
-                                                                class="selectCustom-option"
-                                                                data-value="0.4"
-                                                            >
-                                                                0.4
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="calculator__settings-main-card">
-                                        <img
-                                            src="img/sprites/calc_found3.png"
-                                            alt="found"
-                                        />
-                                        <h5>Монолитная плита с цоколем</h5>
-                                    </div>
-                                    <div class="calculator__settings-main-card">
-                                        <img
-                                            src="img/sprites/calc_found4.png"
-                                            alt="found"
-                                        />
-                                        <h5>Цокольный этаж</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calculator__settings-total">
-                            <div class="calculator__settings-total-left">
-                                <h5 class="calculator__settings-total-text">
-                                    Объем фундамента (м3)
-                                </h5>
-                                <p class="calculator__settings-total-number">
-                                    15 м3
-                                </p>
-                            </div>
-                            <div class="calculator__settings-total-right">
-                                <h5 class="calculator__settings-total-text">
-                                    Стоимость фундамента
-                                </h5>
-                                <ul>
-                                    <li>Работа: <span>225 000 ₽</span></li>
-                                    <li>Материалы: <span>375 000 ₽</span></li>
-                                    <li>Итого: <span>600 000.0 РУБ</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="2" class="calculator__settings-wrapper">2</div>
-                    <div id="3" class="calculator__settings-wrapper">3</div>
-                    <div id="4" class="calculator__settings-wrapper">4</div>
-                    <div id="5" class="calculator__settings-wrapper">5</div>
-                    <div id="6" class="calculator__settings-wrapper">6</div>
-                    <div id="7" class="calculator__settings-wrapper">7</div>
-                    <div id="8" class="calculator__settings-wrapper">8</div>
-                    <div class="calculator__total">
-                        <h4 class="calculator__total-title">
-                            Итоговая стоимость
-                        </h4>
-                        <p class="calculator__total-info">Размеры дома:</p>
-                        <ul class="calculator__total-info-list">
-                            <li>Периметр дома: 40 м</li>
-                            <li>Длина фундамента: 50 м</li>
-                            <li>Площадь застройки: 100 м2</li>
-                        </ul>
-                        <p class="calculator__total-price">1 000 000 ₽</p>
-                        <p class="calculator__total-price-desc">
-                            на текущем этапе расчета
-                        </p>
-                        <button class="calculator__total-btn1">
-                            Заказать полную смету
-                        </button>
-                        <button class="calculator__total-btn2">
-                            отправить по e-mail
-                        </button>
-                    </div>
-                </div>
-                <div class="calculator__nextprev">
-                    <div class="calculator__prev">
-                        <svg
-                            width="16"
-                            height="15"
-                            viewBox="0 0 16 15"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M0.292892 6.79289C-0.0976315 7.18342 -0.0976314 7.81658 0.292893 8.20711L6.65685 14.5711C7.04738 14.9616 7.68054 14.9616 8.07107 14.5711C8.46159 14.1805 8.46159 13.5474 8.07107 13.1569L2.41421 7.5L8.07107 1.84315C8.46159 1.45262 8.46159 0.819457 8.07107 0.428933C7.68054 0.0384085 7.04738 0.0384086 6.65685 0.428933L0.292892 6.79289ZM16 6.5L0.999999 6.5L0.999999 8.5L16 8.5L16 6.5Z"
-                                fill="#797979"
-                            />
-                        </svg>
+			<div class="calculator__main">
+				<div class="calculator__steps">
+					<div
+						id="1"
+						class="calculator__step calculator__step_active"
+					>
+						<h4 class="calculator__step-title">1. Фундамент</h4>
+						<p class="calculator__step-price">500 000 руб</p>
+					</div>
+					<div id="2" class="calculator__step">
+						<h4 class="calculator__step-title">2. Стены</h4>
+						<p class="calculator__step-price">0 руб</p>
+					</div>
+					<div id="3" class="calculator__step">
+						<h4 class="calculator__step-title">3. Перекрытия</h4>
+						<p class="calculator__step-price">0 руб</p>
+					</div>
+					<div id="4" class="calculator__step">
+						<h4 class="calculator__step-title">4. Кровля</h4>
+						<p class="calculator__step-price">0 руб</p>
+					</div>
+					<div id="5" class="calculator__step">
+						<h4 class="calculator__step-title">5. Лестница</h4>
+						<p class="calculator__step-price">0 руб</p>
+					</div>
+					<div id="6" class="calculator__step">
+						<h4 class="calculator__step-title">6. Фасад</h4>
+						<p class="calculator__step-price">0 руб</p>
+					</div>
+					<div id="7" class="calculator__step">
+						<h4 class="calculator__step-title">7. Окна, двери</h4>
+						<p class="calculator__step-price">0 руб</p>
+					</div>
+					<div id="8" class="calculator__step">
+						<h4 class="calculator__step-title">8. Результат</h4>
+						<p class="calculator__step-price">0 руб</p>
+					</div>
+				</div>
+				<div class="calculator__content">
+					<div class="calculator__content-inner">
+						<div
+							id="1"
+							class="calculator__settings-wrapper calculator__settings-wrapper_active"
+						>
+							<div class="calculator__settings">
+								<div class="calculator__settings-top">
+									<div
+										class="calculator__settings-top-square"
+									>
+										<p>1. Укажите размеры строения</p>
+										<div class="calculator__price-column">
+											<div>
+												<div class="slider3">
+													<div
+														class="progress3"
+													></div>
+												</div>
+												<div class="range-input3">
+													<input
+														type="range"
+														class="range-min3"
+														min="10"
+														max="350"
+														value="10"
+														step="1"
+													/>
+													<input
+														type="range"
+														class="range-max3"
+														min="10"
+														max="350"
+														value="350"
+														step="1"
+													/>
+												</div>
+											</div>
+											<div class="price-input3">
+												<div class="field3">
+													<span>от</span>
+													<input
+														type="number"
+														class="input-min3"
+														value="10"
+													/>
+												</div>
+												<div class="field3">
+													<span>до</span>
+													<input
+														type="number"
+														class="input-max3"
+														value="350"
+													/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="calculator__floor">
+										<p>2. Укажите этажность дома</p>
+										<div class="calculator__checkboxes">
+											<div>
+												<input
+													class="calculator__checkbox"
+													type="checkbox"
+													id="cfloor1"
+													name="cfloor1"
+													checked
+												/>
+												<label for="cfloor1"
+													>1 этаж</label
+												>
+											</div>
+											<div>
+												<input
+													class="calculator__checkbox"
+													type="checkbox"
+													id="cfloor2"
+													name="cfloor2"
+												/>
+												<label for="cfloor2"
+													>2 этажа</label
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__settings-main">
+									<h4 class="calculator__settings-main-title">
+										Шаг 1: Фундамент
+									</h4>
+									<p class="calculator__settings-main-choice">
+										Выберите материал для фундамента
+									</p>
+									<div
+										class="calculator__settings-main-cards"
+									>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_found1.png"
+												alt="found"
+											/>
+											<h5>Ленточный на сваях</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_found2.png"
+												alt="found"
+											/>
+											<h5>Монолитная плита</h5>
+											<div class="calculator__selecters">
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Толщина плиты</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	0.25
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.25"
+																	>
+																		0.25
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.3"
+																	>
+																		0.3
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Толщина стены</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom2"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	0.3
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.3"
+																	>
+																		0.3
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.4"
+																	>
+																		0.4
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_found3.png"
+												alt="found"
+											/>
+											<h5>Монолитная плита с цоколем</h5>
+											<div class="calculator__selecters">
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Высота цоколя</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom3"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	0.15
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.15"
+																	>
+																		0.15
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.3"
+																	>
+																		0.3
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.6"
+																	>
+																		0.6
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.75"
+																	>
+																		0.75
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Толщина стены</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom4"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	0.3
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.3"
+																	>
+																		0.3
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.4"
+																	>
+																		0.4
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_found4.png"
+												alt="found"
+											/>
+											<h5>Цокольный этаж</h5>
+											<div class="calculator__selecters">
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Высота стен</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom5"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	2.2
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="2.2"
+																	>
+																		2.2
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="2.5"
+																	>
+																		2.5
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="2.7"
+																	>
+																		2.7
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3"
+																	>
+																		3
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Толщина стены</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom6"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	0.3
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.3"
+																	>
+																		0.3
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.4"
+																	>
+																		0.4
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calculator__settings-total">
+								<div class="calculator__settings-total-left">
+									<h5 class="calculator__settings-total-text">
+										Объем фундамента (м3)
+									</h5>
+									<p
+										class="calculator__settings-total-number"
+									>
+										15 м3
+									</p>
+								</div>
+								<div class="calculator__settings-total-right">
+									<h5 class="calculator__settings-total-text">
+										Стоимость фундамента
+									</h5>
+									<ul>
+										<li>Работа: <span>225 000 ₽</span></li>
+										<li>
+											Материалы: <span>375 000 ₽</span>
+										</li>
+										<li>
+											Итого: <span>600 000.0 РУБ</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="2" class="calculator__settings-wrapper">
+							<div class="calculator__settings">
+								<div class="calculator__settings-main">
+									<h4 class="calculator__settings-main-title">
+										Шаг 2: Стены
+									</h4>
+									<p class="calculator__settings-main-choice">
+										Выберите материал для стены
+									</p>
+									<div
+										class="calculator__settings-main-choiceFloor"
+									>
+										<button
+											class="calculator__settings-main-btnFloor calculator__settings-main-btnFloor_active"
+										>
+											1 этаж
+										</button>
+										<button
+											class="calculator__settings-main-btnFloor"
+										>
+											2 этаж
+										</button>
+									</div>
+									<div
+										class="calculator__settings-main-cards"
+									>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_wall1.png"
+												alt="wall1"
+											/>
+											<h5>Газобетон</h5>
+											<div class="calculator__selecters">
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Толщина блока</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom7"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	0.3
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.3"
+																	>
+																		0.3
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.35"
+																	>
+																		0.35
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.375"
+																	>
+																		0.375
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.4"
+																	>
+																		0.4
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.5"
+																	>
+																		0.5
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Высота стен 1
+															этажа</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom8"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	2.75
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3"
+																	>
+																		3
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3.25"
+																	>
+																		3.25
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3.5"
+																	>
+																		3.5
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_wall2.png"
+												alt="wall2"
+											/>
+											<h5>Кирпич</h5>
+											<div class="calculator__selecters">
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Толщина
+															кирпича</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom9"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	0.25
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.25"
+																	>
+																		0.25
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.38"
+																	>
+																		0.38
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.51"
+																	>
+																		0.51
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Высота стен 1
+															этажа</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom10"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	2.75
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3"
+																	>
+																		3
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3.25"
+																	>
+																		3.25
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3.5"
+																	>
+																		3.5
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_wall3.png"
+												alt="wall3"
+											/>
+											<h5>Поризованный блок</h5>
+											<div class="calculator__selecters">
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Толщина блока</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom11"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	0.25
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.25"
+																	>
+																		0.25
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.38"
+																	>
+																		0.38
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.44"
+																	>
+																		0.44
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="0.51"
+																	>
+																		0.51
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="calculator__select">
+													<div class="select">
+														<span
+															class="selectLabel"
+															>Высота стен 1
+															этажа</span
+														>
+														<div
+															class="selectWrapper"
+														>
+															<div
+																class="selectCustom js-selectCustom12"
+															>
+																<div
+																	class="selectCustom-trigger"
+																>
+																	2.75
+																</div>
+																<div
+																	class="selectCustom-options"
+																>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3"
+																	>
+																		3
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3.25"
+																	>
+																		3.25
+																	</div>
+																	<div
+																		class="selectCustom-option"
+																		data-value="3.5"
+																	>
+																		3.5
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calculator__settings-total">
+								<div class="calculator__settings-total-left">
+									<h5 class="calculator__settings-total-text">
+										Объем стен (м3)
+									</h5>
+									<p
+										class="calculator__settings-total-number"
+									>
+										34.4 м3
+									</p>
+								</div>
+								<div class="calculator__settings-total-right">
+									<h5 class="calculator__settings-total-text">
+										Стоимость стен
+									</h5>
+									<ul>
+										<li>Работа: <span>225 000 ₽</span></li>
+										<li>
+											Материалы: <span>375 000 ₽</span>
+										</li>
+										<li>
+											Итого: <span>600 000.0 РУБ</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="3" class="calculator__settings-wrapper">
+							<div class="calculator__settings">
+								<div class="calculator__settings-main">
+									<h4 class="calculator__settings-main-title">
+										Шаг 3: Перекрытия
+									</h4>
+									<p class="calculator__settings-main-choice">
+										Выберите материал для перекрытий
+									</p>
+									<div
+										class="calculator__settings-main-choiceLap"
+									>
+										<button
+											class="calculator__settings-main-btnLap calculator__settings-main-btnLap_active"
+										>
+											Перекрытия подвала
+										</button>
+										<button
+											class="calculator__settings-main-btnLap"
+										>
+											Перекрытия 1 этажа
+										</button>
+										<button
+											class="calculator__settings-main-btnLap"
+										>
+											Перекрытия 2 этажа
+										</button>
+									</div>
+									<div
+										class="calculator__settings-main-cards"
+									>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_lap1.png"
+												alt="lap1"
+											/>
+											<h5>Деревянное</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_lap2.png"
+												alt="lap2"
+											/>
+											<h5>Сборное железобетонное</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_lap3.png"
+												alt="lap3"
+											/>
+											<h5>Монолитное</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calculator__settings-total">
+								<div class="calculator__settings-total-left">
+									<h5 class="calculator__settings-total-text">
+										Площадь перекрытий (м2)
+									</h5>
+									<p
+										class="calculator__settings-total-number"
+									>
+										100 м2
+									</p>
+								</div>
+								<div class="calculator__settings-total-right">
+									<h5 class="calculator__settings-total-text">
+										Стоимость перекрытий
+									</h5>
+									<ul>
+										<li>Работа: <span>225 000 ₽</span></li>
+										<li>
+											Материалы: <span>375 000 ₽</span>
+										</li>
+										<li>
+											Итого: <span>600 000.0 РУБ</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="4" class="calculator__settings-wrapper">
+							<div class="calculator__settings">
+								<div class="calculator__settings-main">
+									<h4 class="calculator__settings-main-title">
+										Шаг 4: Кровля
+									</h4>
+									<p class="calculator__settings-main-choice">
+										Выберите материал для кровли
+									</p>
+									<div
+										class="calculator__settings-main-cards"
+									>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/cacl_roof1.png"
+												alt="roof1"
+											/>
+											<h5>Металлочерепица</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/cacl_roof2.png"
+												alt="roof2"
+											/>
+											<h5>Мягкая кровля</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/cacl_roof3.png"
+												alt="roof3"
+											/>
+											<h5>Композитная</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/cacl_roof4.png"
+												alt="roof4"
+											/>
+											<h5>Натуральная черепица</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calculator__settings-total">
+								<div class="calculator__settings-total-left">
+									<h5 class="calculator__settings-total-text">
+										Площадь кровли (м2)
+									</h5>
+									<p
+										class="calculator__settings-total-number"
+									>
+										15 м3
+									</p>
+								</div>
+								<div class="calculator__settings-total-right">
+									<h5 class="calculator__settings-total-text">
+										Стоимость кровли
+									</h5>
+									<ul>
+										<li>Работа: <span>225 000 ₽</span></li>
+										<li>
+											Материалы: <span>375 000 ₽</span>
+										</li>
+										<li>
+											Итого: <span>600 000.0 РУБ</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="5" class="calculator__settings-wrapper">
+							<div class="calculator__settings">
+								<div class="calculator__settings-main">
+									<h4 class="calculator__settings-main-title">
+										Шаг 5: Лестница
+									</h4>
+									<p class="calculator__settings-main-choice">
+										Выберите материал для лестниц
+									</p>
+									<div
+										class="calculator__settings-main-cards"
+									>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_ladder1.png"
+												alt="ladder1"
+											/>
+											<h5>Деревянная (Временная)</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_ladder2.png"
+												alt="ladder2"
+											/>
+											<h5>Монолитная</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calculator__settings-total">
+								<div
+									class="calculator__settings-total-right calculator__settgins-total-full"
+								>
+									<h5 class="calculator__settings-total-text">
+										Стоимость лестницы
+									</h5>
+									<ul>
+										<li>Работа: <span>225 000 ₽</span></li>
+										<li>
+											Материалы: <span>375 000 ₽</span>
+										</li>
+										<li>
+											Итого: <span>600 000.0 РУБ</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="6" class="calculator__settings-wrapper">
+							<div class="calculator__settings">
+								<div class="calculator__settings-main">
+									<h4 class="calculator__settings-main-title">
+										Шаг 6: Фасад
+									</h4>
+									<p class="calculator__settings-main-choice">
+										Выберите материал для фасада
+									</p>
+									<div
+										class="calculator__settings-main-cards"
+									>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_facade1.png"
+												alt="facade1"
+											/>
+											<h5>Клинкерной плиткой</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_facade2.png"
+												alt="facade2"
+											/>
+											<h5>Облицовочный кирпич</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_facade3.png"
+												alt="facade2"
+											/>
+											<h5>Теплый фасад</h5>
+										</div>
+										<div
+											class="calculator__settings-main-card"
+										>
+											<img
+												src="img/sprites/calc_facade4.png"
+												alt="facade2"
+											/>
+											<h5>Штукатурный</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calculator__settings-total">
+								<div
+									class="calculator__settings-total-right calculator__settgins-total-full"
+								>
+									<h5 class="calculator__settings-total-text">
+										Стоимость фасада
+									</h5>
+									<ul>
+										<li>Работа: <span>225 000 ₽</span></li>
+										<li>
+											Материалы: <span>375 000 ₽</span>
+										</li>
+										<li>
+											Итого: <span>600 000.0 РУБ</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="7" class="calculator__settings-wrapper">
+							<div class="calculator__settings">
+								<div class="calculator__settings-main">
+									<h4 class="calculator__settings-main-title">
+										Шаг 7: Окна, Двери
+									</h4>
+									<p class="calculator__settings-main-choice">
+										Выберите количетсво окон и дверей
+									</p>
+									<div class="calculator__settings-window">
+										<h5
+											class="calculator__settings-window-title"
+										>
+											1. Введите количество окон
+										</h5>
+										<p
+											class="calculator__settings-window-desc"
+										>
+											В расчете стандартного окна приняты
+											размеры проема 1.8 м2 = 1.2х1.5 м
+											<span
+												>Изменение количества окон
+												учитывается в объеме материала
+												стен.</span
+											>
+										</p>
+										<div
+											class="calculator__settings-window-wrapper"
+										>
+											<div
+												class="calculator__price-column"
+											>
+												<div>
+													<div class="slider4">
+														<div
+															class="progress4"
+														></div>
+													</div>
+													<div class="range-input4">
+														<input
+															type="range"
+															class="range-min4"
+															min="0"
+															max="20"
+															value="0"
+															step="1"
+														/>
+													</div>
+												</div>
+												<div class="price-input4">
+													<div class="field4">
+														<input
+															type="number"
+															class="input-min4"
+															value="0"
+														/>
+														<span>окна</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="calculator__settings-door-line"
+									></div>
+									<div class="calculator__settings-door">
+										<h5
+											class="calculator__settings-door-title"
+										>
+											2. Введите количество дверей
+										</h5>
+										<p
+											class="calculator__settings-door-desc"
+										>
+											В расчете стандартной двери приняты
+											размеры проема 2.1 м2 = 2.1х1.0 м
+											<span
+												>Изменение количества дверей
+												учитывается в объеме материала
+												стен.</span
+											>
+										</p>
+										<div
+											class="calculator__settings-door-wrapper"
+										>
+											<div
+												class="calculator__price-column"
+											>
+												<div>
+													<div class="slider5">
+														<div
+															class="progress5"
+														></div>
+													</div>
+													<div class="range-input5">
+														<input
+															type="range"
+															class="range-min5"
+															min="0"
+															max="20"
+															value="0"
+															step="1"
+														/>
+													</div>
+												</div>
+												<div class="price-input5">
+													<div class="field5">
+														<input
+															type="number"
+															class="input-min5"
+															value="0"
+														/>
+														<span>двери</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="8" class="calculator__settings-wrapper">
+							<h4
+								class="calculator__settings-main-title calculator__settings-result-title"
+							>
+								Шаг 8: Результат
+							</h4>
+							<div class="calculator__settings-result">
+								<div class="calculator__settings-resultTotal">
+									<h5
+										class="calculator__settings-resultTotal-title"
+									>
+										Материалы и стоимость работ
+									</h5>
+									<div
+										class="calculator__settings-resultTotal-row"
+									>
+										<p
+											class="calculator__settings-resultTotal-desc"
+										>
+											Итоговая стоимость материалов:
+										</p>
+										<p
+											class="calculator__settings-resultTotal-price"
+										>
+											1 000 000 ₽
+										</p>
+									</div>
+									<div
+										class="calculator__settings-resultTotal-row"
+									>
+										<p
+											class="calculator__settings-resultTotal-desc"
+										>
+											Итоговая стоимость работ:
+										</p>
+										<p
+											class="calculator__settings-resultTotal-price"
+										>
+											1 000 000 ₽
+										</p>
+									</div>
+									<div
+										class="calculator__settings-resultTotal-row"
+									>
+										<p
+											class="calculator__settings-resultTotal-desc"
+										>
+											Итого:
+										</p>
+										<p
+											class="calculator__settings-resultTotal-price"
+										>
+											2 000 000 ₽
+										</p>
+									</div>
+								</div>
+								<div class="calculator__settings-resultStep">
+									<div
+										class="calculator__settings-resultStep-title"
+									>
+										<p
+											class="calculator__settings-resultStep-name"
+										>
+											Фундамент
+										</p>
+										<img
+											src="img/sprites/calc_dropdown.svg"
+											alt="dropdown"
+										/>
+									</div>
+									<div
+										class="calculator__settings-resultStep-inner"
+									>
+										<div
+											class="calculator__settings-resultStep-left"
+										>
+											<img
+												src="img/sprites/calc_found1.png"
+												alt="found"
+											/>
+										</div>
+										<div
+											class="calculator__settings-resultStep-right"
+										>
+											<div
+												class="calculator__settings-resultStep-top"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Материал фундамента:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														Монолитная плита
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Объём фундамента:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														7.5 м3
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Толщина плиты:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														0.25 м
+													</p>
+												</div>
+											</div>
+											<div
+												class="calculator__settings-resultStep-bottom"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость работ:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость материалов:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Итого:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__settings-resultStep">
+									<div
+										class="calculator__settings-resultStep-title"
+									>
+										<p
+											class="calculator__settings-resultStep-name"
+										>
+											Стены
+										</p>
+										<img
+											src="img/sprites/calc_dropdown.svg"
+											alt="dropdown"
+										/>
+									</div>
+									<div
+										class="calculator__settings-resultStep-inner"
+									>
+										<div
+											class="calculator__settings-resultStep-left"
+										>
+											<img
+												src="img/sprites/calc_wall1.png"
+												alt="wall"
+											/>
+										</div>
+										<div
+											class="calculator__settings-resultStep-right"
+										>
+											<div
+												class="calculator__settings-resultStep-top"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Материал стен:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														Кирпич
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Высота стен:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														7.5 м3
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Объём стен:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														26.575 м3
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Толщина блока:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														0.25 м
+													</p>
+												</div>
+											</div>
+											<div
+												class="calculator__settings-resultStep-bottom"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость работ:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость материалов:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Итого:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__settings-resultStep">
+									<div
+										class="calculator__settings-resultStep-title"
+									>
+										<p
+											class="calculator__settings-resultStep-name"
+										>
+											Перекрытия
+										</p>
+										<img
+											src="img/sprites/calc_dropdown.svg"
+											alt="dropdown"
+										/>
+									</div>
+									<div
+										class="calculator__settings-resultStep-inner"
+									>
+										<div
+											class="calculator__settings-resultStep-left"
+										>
+											<img
+												src="img/sprites/calc_lap1.png"
+												alt="lap"
+											/>
+										</div>
+										<div
+											class="calculator__settings-resultStep-right"
+										>
+											<div
+												class="calculator__settings-resultStep-top"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Материал перекрытий:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														Сборное железобетонное
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Площадь перекрытия:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														100 м2
+													</p>
+												</div>
+											</div>
+											<div
+												class="calculator__settings-resultStep-bottom"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость работ:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость материалов:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Итого:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__settings-resultStep">
+									<div
+										class="calculator__settings-resultStep-title"
+									>
+										<p
+											class="calculator__settings-resultStep-name"
+										>
+											Кровля
+										</p>
+										<img
+											src="img/sprites/calc_dropdown.svg"
+											alt="dropdown"
+										/>
+									</div>
+									<div
+										class="calculator__settings-resultStep-inner"
+									>
+										<div
+											class="calculator__settings-resultStep-left"
+										>
+											<img
+												src="img/sprites/cacl_roof1.png"
+												alt="roof"
+											/>
+										</div>
+										<div
+											class="calculator__settings-resultStep-right"
+										>
+											<div
+												class="calculator__settings-resultStep-top"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Материал кровли:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														Натуральная черепица
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Площадь кровли:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														180 м2
+													</p>
+												</div>
+											</div>
+											<div
+												class="calculator__settings-resultStep-bottom"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость работ:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость материалов:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Итого:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__settings-resultStep">
+									<div
+										class="calculator__settings-resultStep-title"
+									>
+										<p
+											class="calculator__settings-resultStep-name"
+										>
+											Лестница
+										</p>
+										<img
+											src="img/sprites/calc_dropdown.svg"
+											alt="dropdown"
+										/>
+									</div>
+									<div
+										class="calculator__settings-resultStep-inner"
+									>
+										<div
+											class="calculator__settings-resultStep-left"
+										>
+											<img
+												src="../../../img/sprites/calc_ladder1.png"
+												alt="ladder"
+											/>
+										</div>
+										<div
+											class="calculator__settings-resultStep-right"
+										>
+											<div
+												class="calculator__settings-resultStep-top"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Материал лестницы:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														Металическая
+													</p>
+												</div>
+											</div>
+											<div
+												class="calculator__settings-resultStep-bottom"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость работ:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость материалов:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Итого:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__settings-resultStep">
+									<div
+										class="calculator__settings-resultStep-title"
+									>
+										<p
+											class="calculator__settings-resultStep-name"
+										>
+											Фасад
+										</p>
+										<img
+											src="img/sprites/calc_dropdown.svg"
+											alt="dropdown"
+										/>
+									</div>
+									<div
+										class="calculator__settings-resultStep-inner"
+									>
+										<div
+											class="calculator__settings-resultStep-left"
+										>
+											<img
+												src="img/sprites/calc_facade1.png"
+												alt="facade"
+											/>
+										</div>
+										<div
+											class="calculator__settings-resultStep-right"
+										>
+											<div
+												class="calculator__settings-resultStep-top"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Материал фасада:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														Теплый фасад
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Площадь фасада:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														180 м2
+													</p>
+												</div>
+											</div>
+											<div
+												class="calculator__settings-resultStep-bottom"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость работ:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Стоимость материалов:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Итого:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														48 750 ₽
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__settings-resultStep">
+									<div
+										class="calculator__settings-resultStep-title"
+									>
+										<p
+											class="calculator__settings-resultStep-name"
+										>
+											Окна, Двери
+										</p>
+										<img
+											src="img/sprites/calc_dropdown.svg"
+											alt="dropdown"
+										/>
+									</div>
+									<div
+										class="calculator__settings-resultStep-inner"
+									>
+										<div
+											class="calculator__settings-resultStep-left"
+										>
+											<img
+												src="img/sprites/calc_windoor.png"
+												alt="windowanddoor"
+											/>
+										</div>
+										<div
+											class="calculator__settings-resultStep-right"
+										>
+											<div
+												class="calculator__settings-resultStep-top"
+											>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Количество окон:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														4
+													</p>
+												</div>
+												<div>
+													<p
+														class="calculator__settings-resultStep-text"
+													>
+														Количество дверей:
+													</p>
+													<p
+														class="calculator__settings-resultStep-count"
+													>
+														4
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="calculator__nextprev">
+							<div class="calculator__prev">
+								<svg
+									width="16"
+									height="15"
+									viewBox="0 0 16 15"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M0.292892 6.79289C-0.0976315 7.18342 -0.0976314 7.81658 0.292893 8.20711L6.65685 14.5711C7.04738 14.9616 7.68054 14.9616 8.07107 14.5711C8.46159 14.1805 8.46159 13.5474 8.07107 13.1569L2.41421 7.5L8.07107 1.84315C8.46159 1.45262 8.46159 0.819457 8.07107 0.428933C7.68054 0.0384085 7.04738 0.0384086 6.65685 0.428933L0.292892 6.79289ZM16 6.5L0.999999 6.5L0.999999 8.5L16 8.5L16 6.5Z"
+										fill="#797979"
+									/>
+								</svg>
 
-                        <p>Назад</p>
-                    </div>
-                    <div class="calculator__next">
-                        <button>Следующий шаг</button>
-                    </div>
-                </div>
-            </div>
+								<p>Назад</p>
+							</div>
+							<div class="calculator__next">
+								<button>Следующий шаг</button>
+							</div>
+						</div>
+					</div>
+					<div class="calculator__total">
+						<div>
+							<h4 class="calculator__total-title">
+								Итоговая стоимость
+							</h4>
+							<p class="calculator__total-info">Размеры дома:</p>
+							<ul class="calculator__total-info-list">
+								<li>Периметр дома: 40 м</li>
+								<li>Длина фундамента: 50 м</li>
+								<li>Площадь застройки: 100 м2</li>
+							</ul>
+						</div>
+						<div class="calculator__total-right">
+							<p class="calculator__total-price">1 000 000 ₽</p>
+							<p class="calculator__total-price-desc">
+								на текущем этапе расчета
+							</p>
+							<button class="calculator__total-btn1">
+								Заказать полную смету
+							</button>
+							<button class="calculator__total-btn2">
+								отправить по e-mail
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <div class="calculator__warning">
-                <h3 class="calculator__warning-title">Внимание!</h3>
-                <div class="calculator__text">
-                    <p>
-                        Онлайн расчет стоимости строительства дома
-                        <span>является ориентировочным и предварительным</span>
-                        . Для Вашего удобства мы запрашиваем только два
-                        параметра будущей постройки – размеры и этажность дома,
-                        из которых программа высчитывает объём необходимых
-                        материалов и работы. В любом случае, количество
-                        материалов зависит от особенностей каждого проекта,
-                        которые мы заранее предусмотреть не сможем (квадратный
-                        дом и дом в форме буквы «Г», с той же площадью будут
-                        отличаться в количестве необходимого стенового материала
-                        на 10–20 %).  Калькулятор строительства дома позволит
-                        сравнить стоимость каждого этапа стройки при
-                        использовании различных материалов и технологий,
-                        например, монолитного и сборного фундамента, или несущих
-                        стен из газобетона, керамических блоков и кирпича.
-                    </p>
-                    <p>
-                        Вы можете посчитать в калькуляторе строительства дома
-                        как сразу все этапы, так и несколько необходимых Вам. В
-                        любом случае, Вы получите смету по всем необходимым
-                        стройматериалам, используемым в выбранных этапах. Эту
-                        информацию можно отправить себе на почту, или же
-                        отправить нашим специалистам, если у Вас остались
-                        вопросы по расчёту, или нужно получить точную стоимость.
-                    </p>
-                    <p>
-                        Указанная на сайте информация носит исключительно
-                        информационный характер, и ни при каких условиях не
-                        является публичной офертой.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+			<div class="calculator__warning">
+				<h3 class="calculator__warning-title">Внимание!</h3>
+				<div class="calculator__text">
+					<p>
+						Онлайн расчет стоимости строительства дома
+						<span>является ориентировочным и предварительным</span>
+						. Для Вашего удобства мы запрашиваем только два
+						параметра будущей постройки – размеры и этажность дома,
+						из которых программа высчитывает объём необходимых
+						материалов и работы. В любом случае, количество
+						материалов зависит от особенностей каждого проекта,
+						которые мы заранее предусмотреть не сможем (квадратный
+						дом и дом в форме буквы «Г», с той же площадью будут
+						отличаться в количестве необходимого стенового материала
+						на 10–20 %).  Калькулятор строительства дома позволит
+						сравнить стоимость каждого этапа стройки при
+						использовании различных материалов и технологий,
+						например, монолитного и сборного фундамента, или несущих
+						стен из газобетона, керамических блоков и кирпича.
+					</p>
+					<p>
+						Вы можете посчитать в калькуляторе строительства дома
+						как сразу все этапы, так и несколько необходимых Вам. В
+						любом случае, Вы получите смету по всем необходимым
+						стройматериалам, используемым в выбранных этапах. Эту
+						информацию можно отправить себе на почту, или же
+						отправить нашим специалистам, если у Вас остались
+						вопросы по расчёту, или нужно получить точную стоимость.
+					</p>
+					<p>
+						Указанная на сайте информация носит исключительно
+						информационный характер, и ни при каких условиях не
+						является публичной офертой.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

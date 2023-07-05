@@ -8,7 +8,6 @@ const blockSettingsContent = document.querySelector('.projectsTop__settings-cont
 const blockSettingTitle = document.querySelector('.projectsTop__title-mobile');
 
 
-
 if (btnSettings) {
     btnSettings.addEventListener('click', () => {
         blockSettingsWrapper.classList.add('projectsTop__settings-wrapper-open');
