@@ -88,22 +88,6 @@ if (calcPrev) {
   });
 }
 
-window.onload = () => {
-  currentContent = document.querySelector(
-    ".calculator__settings-wrapper_active"
-  );
-
-  if (currentContent) {
-    currentId = currentContent.id - 1;
-
-    if (currentContent.id == 1) {
-      calcPrev.classList.add("calculator__prev_hide");
-    } else {
-      calcPrev.classList.remove("calculator__prev_hide");
-    }
-  }
-};
-
 // вперед
 
 if (calcNext) {
