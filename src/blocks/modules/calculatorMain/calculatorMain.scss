@@ -94,7 +94,7 @@
     }
 
     &__total-info-list {
-        margin-bottom: 168px;
+        margin-bottom: 138px;
     }
 
     &__total-price {
@@ -236,7 +236,7 @@
     }
 
     &__settings-top {
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         margin-bottom: 30px;
         border-bottom: 1px solid #d4d4d4;
         display: flex;
@@ -252,7 +252,6 @@
         font-size: 16px;
         font-weight: 600;
         line-height: normal;
-        margin-bottom: 30px;
     }
 
     &__floor p {
@@ -317,6 +316,10 @@
         color: #fff;
     }
 
+    &__settings-main-btnFloor_hide {
+        display: none;
+    }
+
     &__settings-main-btnLap {
         border-radius: 50px;
         border: 1px solid #b6b6b6;
@@ -335,6 +338,10 @@
         padding: 11px 21px;
     }
 
+    &__settings-main-btnLap_hide {
+        display: none;
+    }
+
     &__settings-main-choiceLap {
         margin-bottom: 30px;
     }
@@ -342,7 +349,14 @@
     &__settings-main-cards {
         display: flex;
         gap: 8px;
-        // justify-content: space-between;
+    }
+
+    &__settings-main-floorHide {
+        display: none;
+    }
+
+    &__settings-main-lapHide {
+        display: none;
     }
 
     &__settings-main-card {
@@ -460,6 +474,11 @@
         padding: 26px 37px;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
+        display: none;
+    }
+
+    &__settings-resultStep_active {
+        display: block;
     }
 
     &__settings-resultStep:hover {
@@ -486,6 +505,27 @@
         max-width: 837px;
     }
 
+    &__settings-resultStep-innerWrapper {
+        width: 100%;
+    }
+
+    &__settings-resultStepFloor1-inner > p {
+        margin-bottom: 10px;
+    }
+
+    &__settings-resultStepFloor2-inner {
+        margin-top: 30px;
+    }
+
+    &__settings-resultStepFloor2-inner > p {
+        margin-bottom: 10px;
+    }
+
+    &__settings-resultStep3-wrapper {
+        display: flex;
+        gap: 36px;
+    }
+
     &__settings-resultStep-inner_active {
         display: flex;
     }
@@ -493,6 +533,12 @@
     &__settings-resultStep-left img {
         width: 100px;
         height: 100px;
+    }
+
+    &__settings-resultStep-left p {
+        color: #23272b;
+        font-size: 16px;
+        font-weight: 400;
     }
 
     &__settings-resultStep-right {
@@ -705,6 +751,22 @@
     }
 }
 
+.step2-result-floor2 {
+    display: none;
+}
+
+.step2-result-floor2_active {
+    display: block;
+}
+
+.step3-result-floor2 {
+    display: none;
+}
+
+.step3-result-floor2_active {
+    display: block;
+}
+
 @media (max-width: 1200px) {
     .calculator {
         &__title {
@@ -735,6 +797,13 @@
         &__settings-resultStep-inner {
             flex-direction: column;
             gap: 15px;
+            margin-top: 11px;
+        }
+
+        &__settings-resultStep3-wrapper {
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 11px;
         }
     }
 }
@@ -818,7 +887,7 @@
     width: 100%;
     display: flex;
     gap: 4px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .price-input3 .field3 {
     display: flex;
@@ -916,7 +985,6 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
 }
 .field4 input {
-    width: 20px;
     height: 100%;
     outline: none;
     border: 0;
@@ -1002,7 +1070,6 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
 }
 .field5 input {
-    width: 20px;
     height: 100%;
     outline: none;
     border: 0;
@@ -1256,6 +1323,16 @@ input[type="range"]::-moz-range-thumb {
             padding: 14px 12px;
             width: 49%;
         }
+
+        &__settings-main-choiceLap {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__settings-main-choiceLap button {
+            width: 200px;
+        }
     }
 }
 
@@ -1301,16 +1378,16 @@ input[type="range"]::-moz-range-thumb {
             max-height: 184px;
         }
 
-        &__settings-main-card_active {
-            max-height: 300px;
-        }
+        // &__settings-main-card_active {
+        //     max-height: 300px;
+        // }
 
         &__main {
             margin-bottom: 38px;
         }
 
         &__steps {
-            margin-bottom: 0;
+            margin-bottom: 12px;
         }
 
         &__settings-main-title {
@@ -1425,5 +1502,104 @@ input[type="range"]::-moz-range-thumb {
             font-size: 13px;
             text-align: right;
         }
+
+        &__settings-resultStep-left img {
+            width: 74px;
+            height: 74px;
+        }
+
+        &__settings-door {
+            margin-bottom: 0;
+        }
+
+        &__settings-window-desc,
+        &__settings-door-desc {
+            font-size: 14px;
+        }
+
+        &__settings-door-line {
+            border: 0;
+            margin-bottom: 0;
+            margin-top: 28px;
+        }
+
+        &__settings-window-wrapper,
+        &__settings-door-wrapper {
+            max-width: 100%;
+        }
     }
+
+    .step1_found_active {
+        max-height: 300px;
+    }
+
+    .step2_wall_floor1_active {
+        max-height: 300px;
+    }
+
+    .step2_wall_floor2_active {
+        max-height: 300px;
+    }
+
+    .step3_lap_under_active {
+        max-height: 300px;
+    }
+
+    .step3_lap_floor1_active {
+        max-height: 300px;
+    }
+
+    .step3_lap_floor2_active {
+        max-height: 300px;
+    }
+
+    .step4_roof_active {
+        max-height: 300px;
+    }
+
+    .step5_ladder_active {
+        max-height: 300px;
+    }
+
+    .step5_facade_active {
+        max-height: 300px;
+    }
+}
+
+// шаги
+
+.step1_found_active {
+    border: 2px solid #a78b73;
+}
+
+.step2_wall_floor1_active {
+    border: 2px solid #a78b73;
+}
+
+.step2_wall_floor2_active {
+    border: 2px solid #a78b73;
+}
+
+.step3_lap_under_active {
+    border: 2px solid #a78b73;
+}
+
+.step3_lap_floor1_active {
+    border: 2px solid #a78b73;
+}
+
+.step3_lap_floor2_active {
+    border: 2px solid #a78b73;
+}
+
+.step4_roof_active {
+    border: 2px solid #a78b73;
+}
+
+.step5_ladder_active {
+    border: 2px solid #a78b73;
+}
+
+.step5_facade_active {
+    border: 2px solid #a78b73;
 }

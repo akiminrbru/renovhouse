@@ -10,7 +10,8 @@ import "./import/showImage"
 import './import/fullComplect'
 import './import/dynamicAdapt'
 import './import/showFeedback'
-import './import/calculator'
+import './import/calculatorLogic'
+// import './import/calculator'
 
 import "./import/showMore"
 import "./import/swiper"
