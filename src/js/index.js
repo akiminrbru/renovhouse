@@ -11,7 +11,7 @@ import './import/fullComplect'
 import './import/dynamicAdapt'
 import './import/showFeedback'
 import './import/calculatorLogic'
-// import './import/calculator'
+import './import/calculator'
 
 import "./import/showMore"
 import "./import/swiper"
