@@ -149,3 +149,43 @@ if (resetBtn) {
     })
 
 }
+
+if (priceInput) {
+    priceInput[0].addEventListener('input', () => {
+        if (priceInput[0].value < 0) {
+            priceInput[0].value = 0
+        }
+        if (priceInput[0].value > 100000000) {
+            priceInput[0].value = 100000000
+        }
+    })
+
+    priceInput[1].addEventListener('input', () => {
+        if (priceInput[1].value < 0) {
+            priceInput[1].value = 0
+        }
+        if (priceInput[1].value > 100000000) {
+            priceInput[1].value = 100000000
+        }
+    })
+}
+
+if (priceInput2) {
+    priceInput2[0].addEventListener('input', () => {
+        if (priceInput2[0].value < 0) {
+            priceInput2[0].value = 0
+        }
+        if (priceInput2[0].value > 800) {
+            priceInput2[0].value = 800
+        }
+    })
+
+    priceInput2[1].addEventListener('input', () => {
+        if (priceInput2[1].value < 0) {
+            priceInput2[1].value = 0
+        }
+        if (priceInput2[1].value > 800) {
+            priceInput2[1].value = 800
+        }
+    })
+}
