@@ -1981,7 +1981,7 @@ if (secretKey) {
       if (step1_exsist && step2_exsist && step3_exsist && step4_exsist && step5_exsist && step6_exsist && step7_window.value > 0 && step7_door.value > 0) {
         feedback.classList.add('feedback__open')
       } else {
-        showError("ПРОЙДЕНЫ НЕ ВСЕ ШАГИ!")
+        showError("Пройдены не все шаги!")
       }
     })
   }
