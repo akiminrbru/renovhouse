@@ -599,7 +599,6 @@ if (secretKey) {
         step8_materials_sum.innerHTML = parseInt(step8_materials_sum.innerHTML) - step2_prev_floor2_work;
         step8_work_sum.innerHTML = parseInt(step8_work_sum.innerHTML) - step2_prev_floor2_materials;
 
-
         step2_prev_floor2_work = parseInt(price_work)
         step2_prev_floor2_materials = parseInt(price_materials)
         step2_prev_floor2_sum = parseInt(price_materials) + parseInt(price_work)
@@ -1186,7 +1185,6 @@ if (secretKey) {
     changeSteps()
 
   })
-
 
   step1_length.addEventListener('input', () => {
     if (step1_length.value < 1) {
@@ -2103,8 +2101,6 @@ if (secretKey) {
       });
 
       feedback.click()
-
-      // let result = response.json();
     }
   })
 }
