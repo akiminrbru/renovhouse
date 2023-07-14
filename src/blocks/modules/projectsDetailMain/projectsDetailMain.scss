@@ -14,7 +14,7 @@
     &__route a {
         text-decoration: none;
         color: #23272b;
-        transition: all 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
     }
 
     &__route a:hover {
@@ -151,13 +151,13 @@
         font-size: 16px;
         font-weight: 500;
         text-transform: uppercase;
-        transition: all 0.2s ease-in-out;
+        transition: background-color 0.2s ease-in-out;
         white-space: nowrap;
     }
 
     &__calculator:hover {
         cursor: pointer;
-        background: #b28864;
+        background-color: #b28864;
     }
 }
 

@@ -9,7 +9,7 @@
     }
 
     &__route a {
-        transition: all 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
         text-decoration: none;
         color: #23272b;
     }
@@ -130,12 +130,12 @@
         border: 0;
         padding: 17px 62px;
         cursor: pointer;
-        transition: all 0.2s ease-in-out;
+        transition: background-color 0.2s ease-in-out;
     }
 
     &__btn button:hover {
         cursor: pointer;
-        background: #000;
+        background-color: #000;
     }
 
     &__hide {

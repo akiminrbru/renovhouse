@@ -64,13 +64,13 @@
         line-height: 19px;
         text-transform: uppercase;
         color: #ffffff;
-        transition: all 0.2s ease-in-out;
+        transition: background-color 0.2s ease-in-out;
         text-decoration: none;
     }
 
     &__left a:hover {
         cursor: pointer;
-        background: #b28864;
+        background-color: #b28864;
     }
 }
 

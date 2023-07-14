@@ -88,13 +88,15 @@
         text-align: center;
         text-transform: uppercase;
         color: #ffffff;
-        transition: all 0.2s ease-in-out;
+        transition:
+            color 0.2s ease-in-out,
+            background-color 0.2s ease-in-out;
         text-decoration: none;
     }
 
     &__cardReq button:hover {
         cursor: pointer;
-        background: #fff;
+        background-color: #fff;
         color: #23272a;
     }
 }

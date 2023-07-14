@@ -110,13 +110,13 @@
         text-align: center;
         text-transform: uppercase;
         color: #ffffff;
-        transition: all 0.2s ease-in-out;
+        transition: background-color 0.2s ease-in-out;
         text-decoration: none;
     }
 
     &__form button:hover {
         cursor: pointer;
-        background: #b28864;
+        background-color: #b28864;
     }
 
     &__nav {
@@ -139,7 +139,7 @@
         color: #ffffff;
         text-decoration: none;
         margin-left: 25px;
-        transition: all 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
     }
 
     &__links a:first-child {
@@ -160,7 +160,7 @@
     }
 
     &__connect {
-        transition: all 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
     }
 
     &__connect:hover {

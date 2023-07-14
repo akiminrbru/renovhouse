@@ -98,13 +98,13 @@
         border-radius: 50px;
         border: 0;
         padding: 17px 72px 17px 72px;
-        transition: all 0.2s ease-in-out;
+        transition: background-color 0.2s ease-in-out;
         text-decoration: none;
     }
 
     &__btn a:hover {
         cursor: pointer;
-        background: #b28864;
+        background-color: #b28864;
     }
 
     &__btn button {
@@ -118,12 +118,12 @@
         border-radius: 50px;
         border: 0;
         padding: 17px 72px 17px 72px;
-        transition: all 0.2s ease-in-out;
+        transition: background-color 0.2s ease-in-out;
     }
 
     &__btn button:hover {
         cursor: pointer;
-        background: #b28864;
+        background-color: #b28864;
     }
 
     &__prop2 {
