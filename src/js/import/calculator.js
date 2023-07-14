@@ -1968,9 +1968,9 @@ if (secretKey) {
   const mainCalcBtn = document.querySelector('.main-calc-btn');
   const feedback = document.querySelector('.feedback');
 
+  // Проверка все ли шаги пройдены
   if (mainCalcBtn) {
     mainCalcBtn.addEventListener('click', () => {
-
       let step1_exsist = document.querySelector('.step1_found_active');
       let step2_exsist = document.querySelector('.step2_wall_floor1_active');
       let step3_exsist = document.querySelector('.step3_lap_floor1_active');
@@ -1978,7 +1978,7 @@ if (secretKey) {
       let step5_exsist = document.querySelector('.step5_ladder_active')
       let step6_exsist = document.querySelector('.step5_facade_active')
 
-      if (step1_exsist && step2_exsist && step3_exsist && step4_exsist && step5_exsist && step6_exsist) {
+      if (step1_exsist && step2_exsist && step3_exsist && step4_exsist && step5_exsist && step6_exsist && step7_window.value > 0 && step7_door.value > 0) {
         feedback.classList.add('feedback__open')
       } else {
         showError("ПРОЙДЕНЫ НЕ ВСЕ ШАГИ!")
@@ -1986,113 +1986,150 @@ if (secretKey) {
     })
   }
 
+  let calc_name = document.querySelector('.calc-name');
+  let calc_phone = document.querySelector('.calc-phone');
+  let calc_email = document.querySelector('.calc-email');
+
   let windoorimg = document.querySelector('.calculator__windoor');
   let calc_onserver = document.querySelector('.calc_onserver');
 
   calc_onserver.addEventListener('click', () => {
-    let result_obj = {
-      size: {
-        width: step1_width.innerHTML,
-        length: step1_length.innerHTML,
-        floors: step1_floors.innerHTML,
-        perimetr: step1_perimeter.innerHTML,
-        square: step1_square.innerHTML,
-      },
-      foundation: {
-        photo: step1_result_img.src,
-        material: step1_result_material.innerHTML,
-        volume: step1_result_volume.innerHTML,
-        thick: step1_result_thick.innerHTML,
-        price_work: step1_result_priceWork.innerHTML,
-        price_material: step1_result_priceMaterials.innerHTML,
-        price_sum: step1_result_priceSum.innerHTML,
-      },
-      walls: {
-        wall_floor1: {
-          photo: step2_result_img.src,
-          material: step2_result_material.innerHTML,
-          height: step2_result_height.innerHTML,
-          volume: step2_result_volume.innerHTML,
-          thick: step2_result_thick.innerHTML,
-          price_work: step2_result_priceWork.innerHTML,
-          price_material: step2_result_priceMaterials.innerHTML,
-          price_sum: step2_result_priceSum.innerHTML,
+    const validateEmailRegex = /^\S+@\S+\.\S+$/;
+    if (calc_name.value !== "" && calc_phone.value !== "" && calc_email.value !== "" && validateEmailRegex.test(calc_email.value)) {
+      let result_obj = {
+        info: {
+          name: "",
+          phone: "",
+          email: "",
         },
-        wall_floor2: {
-          photo: step22_result_img.src,
-          material: step22_result_material.innerHTML,
-          height: step22_result_height.innerHTML,
-          volume: step22_result_volume.innerHTML,
-          thick: step22_result_thick.innerHTML,
-          price_work: step22_result_priceWork.innerHTML,
-          price_material: step22_result_priceMaterials.innerHTML,
-          price_sum: step22_result_priceSum.innerHTML,
+        size: {
+          width: step1_width.innerHTML,
+          length: step1_length.innerHTML,
+          floors: step1_floors.innerHTML,
+          perimetr: step1_perimeter.innerHTML,
+          square: step1_square.innerHTML,
+        },
+        foundation: {
+          photo: step1_result_img.src,
+          material: step1_result_material.innerHTML,
+          volume: step1_result_volume.innerHTML,
+          thick: step1_result_thick.innerHTML,
+          price_work: step1_result_priceWork.innerHTML,
+          price_material: step1_result_priceMaterials.innerHTML,
+          price_sum: step1_result_priceSum.innerHTML,
+        },
+        walls: {
+          wall_floor1: {
+            photo: step2_result_img.src,
+            material: step2_result_material.innerHTML,
+            height: step2_result_height.innerHTML,
+            volume: step2_result_volume.innerHTML,
+            thick: step2_result_thick.innerHTML,
+            price_work: step2_result_priceWork.innerHTML,
+            price_material: step2_result_priceMaterials.innerHTML,
+            price_sum: step2_result_priceSum.innerHTML,
+          },
+          wall_floor2: {
+            photo: step22_result_img.src,
+            material: step22_result_material.innerHTML,
+            height: step22_result_height.innerHTML,
+            volume: step22_result_volume.innerHTML,
+            thick: step22_result_thick.innerHTML,
+            price_work: step22_result_priceWork.innerHTML,
+            price_material: step22_result_priceMaterials.innerHTML,
+            price_sum: step22_result_priceSum.innerHTML,
+          }
+        },
+        laps: {
+          lap_floor1: {
+            photo: step3_result_img.src,
+            material: step3_result_material.innerHTML,
+            square: step3_result_square.innerHTML,
+            price_work: step3_result_priceWork.innerHTML,
+            price_material: step3_result_priceMaterials.innerHTML,
+            price_sum: step3_result_priceSum.innerHTML,
+          },
+          lap_floor2: {
+            photo: step32_result_img.src,
+            material: step32_result_priceMaterials.innerHTML,
+            square: step32_result_square.innerHTML,
+            price_work: step32_result_priceWork.innerHTML,
+            price_material: step32_result_material.innerHTML,
+            price_sum: step32_result_priceSum.innerHTML,
+          },
+        },
+        roof: {
+          photo: step4_result_img.src,
+          material: step4_result_material.innerHTML,
+          square: step4_result_square.innerHTML,
+          price_work: step4_result_priceWork.innerHTML,
+          price_material: step4_result_priceMaterials.innerHTML,
+          price_sum: step4_result_priceSum.innerHTML,
+        },
+        ladder: {
+          photo: step5_result_img.src,
+          material: step5_result_material.innerHTML,
+          price_work: step5_result_priceWork.innerHTML,
+          price_material: step5_result_priceMaterials.innerHTML,
+          price_sum: step5_result_priceSum.innerHTML,
+        },
+        facade: {
+          photo: step6_result_img.src,
+          material: step6_result_material.innerHTML,
+          square: step6_result_square.innerHTML,
+          price_work: step6_result_priceWork.innerHTML,
+          price_material: step6_result_priceMaterials.innerHTML,
+          price_sum: step6_result_priceSum.innerHTML,
+        },
+        doorsandwindows: {
+          photo: windoorimg.src,
+          count_windos: step7_result_windows.innerHTML,
+          count_doors: step7_result_doors.innerHTML,
+          price_sum: step7_result_priceSum.innerHTML
+        },
+        cost: {
+          price_work: step8_work_sum.innerHTML,
+          price_material: step8_materials_sum.innerHTML,
+          price_sum: step8_total_sum.innerHTML,
         }
-      },
-      laps: {
-        lap_floor1: {
-          photo: step3_result_img.src,
-          material: step3_result_material.innerHTML,
-          square: step3_result_square.innerHTML,
-          price_work: step3_result_priceWork.innerHTML,
-          price_material: step3_result_priceMaterials.innerHTML,
-          price_sum: step3_result_priceSum.innerHTML,
-        },
-        lap_floor2: {
-          photo: step32_result_img.src,
-          material: step32_result_priceMaterials.innerHTML,
-          square: step32_result_square.innerHTML,
-          price_work: step32_result_priceWork.innerHTML,
-          price_material: step32_result_material.innerHTML,
-          price_sum: step32_result_priceSum.innerHTML,
-        },
-      },
-      roof: {
-        photo: step4_result_img.src,
-        material: step4_result_material.innerHTML,
-        square: step4_result_square.innerHTML,
-        price_work: step4_result_priceWork.innerHTML,
-        price_material: step4_result_priceMaterials.innerHTML,
-        price_sum: step4_result_priceSum.innerHTML,
-      },
-      ladder: {
-        photo: step5_result_img.src,
-        material: step5_result_material.innerHTML,
-        price_work: step5_result_priceWork.innerHTML,
-        price_material: step5_result_priceMaterials.innerHTML,
-        price_sum: step5_result_priceSum.innerHTML,
-      },
-      facade: {
-        photo: step6_result_img.src,
-        material: step6_result_material.innerHTML,
-        square: step6_result_square.innerHTML,
-        price_work: step6_result_priceWork.innerHTML,
-        price_material: step6_result_priceMaterials.innerHTML,
-        price_sum: step6_result_priceSum.innerHTML,
-      },
-      doorsandwindows: {
-        photo: windoorimg.src,
-        count_windos: step7_result_windows.innerHTML,
-        count_doors: step7_result_doors.innerHTML,
-        price_sum: step7_result_priceSum.innerHTML
-      },
-      cost: {
-        price_work: step8_work_sum.innerHTML,
-        price_material: step8_materials_sum.innerHTML,
-        price_sum: step8_total_sum.innerHTML,
       }
+
+      let response = fetch('/form.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(result_obj)
+      });
+
+      feedback.click()
+
+      // let result = response.json();
     }
+  })
+}
 
-    let response = fetch('/form.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8'
-      },
-      body: JSON.stringify(result_obj)
-    });
+// Форма со сметой
 
-    // let result = response.json();
+const feedback = document.querySelector('.feedback-smeta');
+const feedbackForm = document.querySelector('.feedback__form-smeta');
 
-    console.log(JSON.stringify(result_obj));
+const mainBtn = document.querySelector('.main-calc-smeta');
+
+if (mainBtn) {
+  mainBtn.addEventListener('click', () => {
+    feedback.classList.add('feedback__open')
+  })
+}
+
+if (feedback) {
+  feedback.addEventListener('click', () => {
+    feedback.classList.remove('feedback__open')
+  })
+}
+
+if (feedbackForm) {
+  feedbackForm.addEventListener('click', (e) => {
+    e.stopPropagation();
   })
 }

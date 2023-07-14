@@ -2994,7 +2994,9 @@
 							<p class="calculator__total-price-desc">
 								на текущем этапе расчета
 							</p>
-							<button class="calculator__total-btn1">
+							<button
+								class="calculator__total-btn1 main-calc-smeta"
+							>
 								Заказать полную смету
 							</button>
 							<button
@@ -3066,26 +3068,89 @@
 		/>
 	</div>
 	<div class="feedback__form">
-		<h3 class="feedback__title">Получить рассчет на почту</h3>
+		<h3 class="feedback__title">Отправить на почту</h3>
 		<p class="feedback__desc">
 			Оставьте свои контакты и мы свяжемся с вами в ближайшее время
 		</p>
 		<form class="feedback__form-wrapper" action="#">
 			<div>
-				<input required type="text" placeholder="Ваше имя" />
+				<input
+					required
+					type="text"
+					placeholder="Ваше имя"
+					class="calc-name"
+				/>
 			</div>
 			<div>
-				<input required type="number" placeholder="Телефон" />
+				<input
+					required
+					type="number"
+					placeholder="Телефон"
+					class="calc-phone"
+				/>
 			</div>
 			<div>
-				<input required type="email" placeholder="E-mail" />
+				<input
+					required
+					type="email"
+					placeholder="E-mail"
+					class="calc-email"
+				/>
 			</div>
 			<div>
-				<button class="calc_onserver">Оставить заявку</button>
+				<button class="calc_onserver">Отправить на почту</button>
 			</div>
 			<p class="feedback__policy">
 				Нажимая на кнопку вы соглашаетесь с нашей
-				<a href="#">политикой конфиденциальности</a>
+				<a href="policy.html">политикой конфиденциальности</a>
+			</p>
+		</form>
+	</div>
+</div>
+
+<div class="feedback feedback-smeta">
+	<div class="feedback__close">
+		<img
+			src="../../../img/sprites/feedback_close.svg"
+			alt="feedback__close"
+		/>
+	</div>
+	<div class="feedback__form feedback__form-smeta">
+		<h3 class="feedback__title">Заказать полную смету</h3>
+		<p class="feedback__desc">
+			Оставьте свои контакты и мы свяжемся с вами в ближайшее время
+		</p>
+		<form class="feedback__form-wrapper" action="#">
+			<div>
+				<input
+					required
+					type="text"
+					placeholder="Ваше имя"
+					class="calc-name"
+				/>
+			</div>
+			<div>
+				<input
+					required
+					type="number"
+					placeholder="Телефон"
+					class="calc-phone"
+				/>
+			</div>
+			<div>
+				<input
+					required
+					type="email"
+					placeholder="E-mail"
+					class="calc-email"
+				/>
+			</div>
+			<div>
+				<button class="calc_onserver">Заказать полную смету</button>
+			</div>
+			<p class="feedback__policy">
+				Нажимая на кнопку вы соглашаетесь с нашей
+				<a href="policy.html">политикой конфиденциальности</a>
 			</p>
 		</form>
 	</div>
