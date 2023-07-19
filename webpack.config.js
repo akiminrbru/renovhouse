@@ -12,6 +12,7 @@ module.exports = {
     },
 
     optimization: {
+        minimize: false,
         splitChunks: {
             cacheGroups: {
                 vendor: {
@@ -25,20 +26,20 @@ module.exports = {
     },
 
     module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: require.resolve("babel-loader"),
-                    options: {
-                        presets: [
-                            ["@babel/preset-env", { modules: false }]
-                        ]
-                    }
+        rules: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: require.resolve("babel-loader"),
+                options: {
+                    presets: [
+                        ["@babel/preset-env", {
+                            modules: false
+                        }]
+                    ]
                 }
             }
-        ]
+        }]
     },
 
     resolve: {

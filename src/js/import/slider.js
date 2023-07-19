@@ -1,33 +1,33 @@
 import Swiper from './swiper'
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 20,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 const swiper1 = new Swiper('.swiper1', {
-    // Optional parameters
-    direction: 'horizontal',
-    spaceBetween: 20,
-    loop: true,  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination1',
-      clickable: true,
-    },
+  // Optional parameters
+  direction: 'horizontal',
+  spaceBetween: 20,
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination1',
+    clickable: true,
+  },
 });
 
-const bullet = document.querySelectorAll('.swiper-pagination-bullet');
+let bullet = document.querySelectorAll('.swiper-pagination-bullet');
 
 for (let i = 0; i < bullet.length; i++) {
   bullet[i].addEventListener('mouseover', () => {
@@ -49,8 +49,8 @@ let swiper3 = new Swiper(".mySwiper", {
   watchSlidesProgress: true,
   breakpoints: {
     400: {
-        slidesPerView: 3,
-        spaceBetween: 9,
+      slidesPerView: 3,
+      spaceBetween: 9,
     },
     768: {
       slidesPerView: 4,
@@ -65,7 +65,7 @@ let swiper3 = new Swiper(".mySwiper", {
       slidesPerView: 6,
       spaceBetween: 9,
     },
-},
+  },
 });
 
 let swiper2 = new Swiper(".mySwiper2", {
@@ -89,7 +89,7 @@ let swiper2 = new Swiper(".mySwiper2", {
 const swiperPrev = document.getElementById("swiperPrev");
 const swiperNext = document.getElementById("swiperNext");
 
-if (swiperPrev && swiperNext ) {
+if (swiperPrev && swiperNext) {
   swiperPrev.addEventListener("click", () => {
     swiper2.slidePrev();
   });
@@ -120,13 +120,13 @@ const swiper4 = new Swiper('.swiper4', {
     992: {
       slidesPerView: 2,
     },
-},
+  },
 });
 
 const swiperPrev4 = document.getElementById("swiper-next4");
 const swiperNext4 = document.getElementById("swiper-prev4");
 
-if (swiperPrev4 && swiperNext4 ) {
+if (swiperPrev4 && swiperNext4) {
   swiperPrev4.addEventListener("click", () => {
     swiper4.slidePrev();
   });
@@ -137,7 +137,6 @@ if (swiperPrev4 && swiperNext4 ) {
 
 const swiper5 = new Swiper('.swiper5', {
   direction: 'horizontal',
-  loop: true,
   spaceBetween: 20,
   slidesPerView: 2,
 
@@ -155,7 +154,7 @@ const swiper5 = new Swiper('.swiper5', {
       slidesPerView: 4,
       spaceBetween: 23,
     },
-},
+  },
 });
 
 const swiper6 = new Swiper('.swiper6', {
