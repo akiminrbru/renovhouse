@@ -391,6 +391,30 @@ if (priceInput2[1]) {
     })
 }
 
+// list
+
+let acc = document.getElementsByClassName("help__card");
+
+if (acc) {
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            let answer = this.lastElementChild;
+            let arrow = this.firstElementChild.lastElementChild;
+
+            arrow.classList.toggle('help__activeArrow')
+
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        });
+    }
+
+}
+
+
+
 // showFeedback
 const feedback = document.querySelector('.feedback');
 const feedbackForm = document.querySelector('.feedback__form');
