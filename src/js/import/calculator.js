@@ -1,3 +1,4 @@
+// КалькуляторНачало
 let secretKey = document.querySelector('.calculator__secret-key');
 if (secretKey) {
   // Табы
@@ -2129,3 +2130,4 @@ if (feedbackForm) {
     e.stopPropagation();
   })
 }
+// КалькуляторКонец

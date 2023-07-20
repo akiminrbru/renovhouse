@@ -1,27 +1,10 @@
 .projectsDetailMain {
     &__inner {
-        padding-top: 129px;
         padding-bottom: 70px;
     }
 
-    &__route {
-        font-size: 14px;
-        line-height: 17px;
-        color: #23272b;
-        margin-bottom: 40px;
-    }
-
-    &__route a {
-        text-decoration: none;
-        color: #23272b;
-        transition: color 0.2s ease-in-out;
-    }
-
-    &__route a:hover {
-        color: #a78b73;
-    }
-
     &__content {
+        margin-top: 40px;
         display: flex;
     }
 
@@ -261,6 +244,7 @@
         }
 
         &__content {
+            margin-top: 30px;
             display: block;
         }
     }
@@ -268,12 +252,12 @@
 
 @media (max-width: 992px) {
     .projectsDetailMain {
-        &__route {
-            margin-bottom: 30px;
-        }
-
         &__title {
             font-size: 36px;
+        }
+
+        &__content {
+            margin-top: 25px;
         }
     }
 }
@@ -288,8 +272,8 @@
             max-width: 90%;
         }
 
-        &__route {
-            margin-bottom: 20px;
+        &__content {
+            margin-top: 20px;
         }
     }
 }
@@ -303,8 +287,11 @@
 @media (max-width: 600px) {
     .projectsDetailMain {
         &__inner {
-            padding-top: 100px;
             padding-bottom: 39px;
+        }
+
+        &__content {
+            margin-top: 15px;
         }
 
         &__title {
@@ -322,11 +309,6 @@
 
         &__right {
             margin-top: 0;
-            margin-bottom: 15px;
-        }
-
-        &__route {
-            font-size: 13px;
             margin-bottom: 15px;
         }
 

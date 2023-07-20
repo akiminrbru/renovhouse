@@ -1,23 +1,7 @@
 .projectsTop {
-    padding-top: 129px;
     padding-bottom: 46px;
     margin-bottom: 27px;
     border-bottom: 1px solid #e9e9e9;
-
-    &__route {
-        font-size: 14px;
-        color: #23272b;
-    }
-
-    &__route a {
-        text-decoration: none;
-        color: #23272b;
-        transition: color 0.2s ease-in-out;
-    }
-
-    &__route a:hover {
-        color: #a78b73;
-    }
 
     &__title {
         display: flex;
@@ -221,14 +205,9 @@
 
 @media (max-width: 600px) {
     .projectsTop {
-        padding-top: 90px;
         padding-bottom: 0;
         margin-bottom: 21px;
         border-bottom: 0;
-
-        &__route {
-            font-size: 13px;
-        }
 
         &__left {
             flex-direction: column;
